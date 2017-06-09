@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+// Global colors
+$background: rgba(23,28,33,1);
+$orange: orange;
+$mercury: #A9ADBB;
+$venus: #EB6845;
+$earth: #4A89DC;
+$mars: #e60000;
+$jupiter: #EB6845;
+$saturn: #FFAA44;
+$uranus: #3BAFDA;
+$neptune: #3399DD;
+
+body {
+    margin: 0;
+    margin-top: -2.35em;
+}
+
+.text-underline a {
+    color: #fff;
+    height: 4em;
+    text-decoration: none !important;
+}
+
+.button-slide-right {
+    color: #fff;
+}

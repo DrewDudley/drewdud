@@ -1,0 +1,71 @@
+@import "../../styles.scss";
+
+#intro {
+    height: 100vh;
+    background-color: $background;
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Nunito:400","Helvetica Neue",Helvetica,Arial,sans-serif;
+    h2 {
+        padding-top: 15%;
+    }
+
+    p {
+        color: $orange;
+    }
+    #planets {
+        margin: auto;
+        padding: 5% 10em;
+        .planet {
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        #mercury {
+            width: .6em;
+            height: .6em;
+            background: $mercury;
+        }
+        #venus {
+            width: .8em;
+            height: .8em;
+            background: $venus;
+        }
+        #earth {
+            width: 1em;
+            height: 1em;
+            background: $earth;
+        }
+        #mars {
+            width: .8em;
+            height: .8em;
+            background: $mars;
+        }
+        #jupiter {
+            width: 2.4em;
+            height: 2.4em;
+            background: $jupiter;
+        }
+        #saturn {
+            width: 1.6em;
+            height: 1.6em;
+            background: $saturn;
+            border: .6em solid #cc7000;
+            border-radius: 50%;
+        }
+        #uranus {
+            width: 1.9em;
+            height: 1.9em;
+            background: $uranus;
+        }
+        #neptune {
+            width: 2em;
+            height: 2em;
+            background: $neptune;
+        }
+    }
+}
