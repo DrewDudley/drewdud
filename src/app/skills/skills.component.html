@@ -1,5 +1,17 @@
 <div id="skills">
-  <p>
-    skills works!
+  <p class=page-title>
+    What do I know?
   </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3" *ngFor="let skill of skills">
+        <h4>
+          {{ skill.name }}
+        </h4>
+        <p>
+          {{ skill.description }}
+        </p>
+      <div>
+    </div>
+  </div>
 </div>

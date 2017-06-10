@@ -1,17 +1,15 @@
 @import "../../styles.scss";
+@import "../app.component.scss";
 
 #intro {
-    height: 100vh;
+    min-height: 100vh;
     background-color: $background;
     color: #fff;
-    font-weight: 300;
-    font-size: 30px;
     text-align: center;
-    font-family: "Nunito:400","Helvetica Neue",Helvetica,Arial,sans-serif;
     h2 {
         padding-top: 15%;
+        font-size: 45px;
     }
-
     p {
         color: $orange;
     }
@@ -23,49 +21,55 @@
             -moz-border-radius: 50%;
             -webkit-border-radius: 50%;
             display: inline-block;
-            margin: 0 10px;
+            margin: 0 8px;
+            vertical-align: middle;
         }
         #mercury {
-            width: .6em;
-            height: .6em;
+            width: 1.2em;
+            height: 1.2em;
             background: $mercury;
         }
         #venus {
-            width: .8em;
-            height: .8em;
+            width: 1.4em;
+            height: 1.4em;
             background: $venus;
         }
         #earth {
-            width: 1em;
-            height: 1em;
+            width: 2em;
+            height: 2em;
             background: $earth;
         }
         #mars {
-            width: .8em;
-            height: .8em;
+            width: 1.6em;
+            height: 1.6em;
             background: $mars;
         }
         #jupiter {
-            width: 2.4em;
-            height: 2.4em;
+            width: 3.6em;
+            height: 3.6em;
             background: $jupiter;
         }
         #saturn {
-            width: 1.6em;
-            height: 1.6em;
+            width: 3.3em;
+            height: 3.3em;
             background: $saturn;
-            border: .6em solid #cc7000;
+            border: .5em solid #cc7000;
             border-radius: 50%;
         }
         #uranus {
-            width: 1.9em;
-            height: 1.9em;
+            width: 2.9em;
+            height: 2.9em;
             background: $uranus;
         }
         #neptune {
-            width: 2em;
-            height: 2em;
+            width: 3em;
+            height: 3em;
             background: $neptune;
         }
+    }
+    i {
+        margin-top: 5%;
+        font-size: 4.5em;
+        color: #fff;
     }
 }

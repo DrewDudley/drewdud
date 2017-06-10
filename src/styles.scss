@@ -1,3 +1,6 @@
+@import "~font-awesome/css/font-awesome.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 // Global colors
 $background: rgba(23,28,33,1);
 $orange: orange;
@@ -12,10 +15,15 @@ $neptune: #3399DD;
 
 body {
     margin: 0;
-    margin-top: -2.35em;
+    font-family: "Nunito:400","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
 }
 
-.text-underline a {
+.page-title {
+    font-size: 35px;
+}
+
+.text-underline {
     color: #fff;
     height: 4em;
     text-decoration: none !important;
