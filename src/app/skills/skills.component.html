@@ -1,17 +1,58 @@
 <div id="skills">
-  <p class=page-title>
-    What do I know?
-  </p>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3" *ngFor="let skill of skills">
-        <h4>
-          {{ skill.name }}
-        </h4>
-        <p>
-          {{ skill.description }}
-        </p>
-      <div>
+  <!--Current skills-->
+  <div>
+    <p class=page-title>
+      Here's what I know...
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2" *ngFor="let skill of skills">
+          <h4>
+            <img src="{{ skill.img }}" class="skill-img" *ngIf="skill.img">
+          </h4>
+          <span>
+            {{ skill.name }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!--Sort of skills-->
+  <div>
+    <p class=page-title>
+      Here's what I'm learning...
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2" *ngFor="let sortaSkill of sortaSkills">
+          <h4>
+            <img src="{{ sortaSkill.img }}" class="skill-img" *ngIf="sortaSkill.img">
+          </h4>
+          <span>
+            {{ sortaSkill.name }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!--Future skills-->
+  <div>
+    <p class=page-title>
+      And here's my TODO list...
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2" *ngFor="let futureSkill of futureSkills">
+          <h4>
+            <img src="{{ futureSkill.img }}" class="skill-img" *ngIf="futureSkill.img">
+          </h4>
+          <span>
+            {{ futureSkill.name }}
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

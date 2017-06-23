@@ -1,0 +1,13 @@
+@import "../app.component.scss";
+
+#portfolio {
+    padding: 100px 120px;
+    .container {
+        width: 100%;
+        padding: 3em 0 0 0;
+        height: 100%;
+    }
+    @media only screen and (max-width: 1250px) {
+        padding: 100px 30px;
+    }
+}

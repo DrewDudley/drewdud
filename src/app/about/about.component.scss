@@ -1,0 +1,24 @@
+@import "../app.component.scss";
+
+#about {
+    padding: 100px 120px;
+    @media only screen and (max-width: 1250px) {
+        padding: 40px 10px;
+        .about-img {
+            margin-bottom: 25px;
+        }
+    }
+    .container {
+        width: 100%;
+    }
+    .col-xl-2 {
+        text-align: center;
+        margin: auto;
+    }
+    .about-img {
+        height: 14em;
+        width: 14em;
+        border-radius: 50%;
+        border: .6em solid $purple;
+    }
+}
