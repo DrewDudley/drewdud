@@ -25,24 +25,18 @@
         p {
             color: $purple;
         }
-        #menu {
-            p {
-                font-size: 1.8em;
-                padding-top: 1.4em;
-                color: white;
-            }
-        }
     }
 
     #menu-header {
         font-size: 1.8em;
-        padding-top: 3em;
+        padding: 1.5em 15px 0 15px;
         color: white !important;
-        animation: fadeIn .25s ease-in both;
+        animation: fadeDown .25s ease-in both;
         animation-delay: 1.5s;
     }
     /* Menu style */
     .overlay {
+        padding-top: .5em;
         top: 0;
         left: 0;
         width: 100%;
@@ -93,11 +87,11 @@
         margin-right: 0;
     }
 
-    /* Fade-down Effect */
+    /* Fade-down Timing */
     .overlay-boxify {
         nav {
             ul li {
-                animation: fadeIn 0.25s ease-in both;
+                animation: fadeDown 0.25s ease-in both;
             }
             ul:first-child li:first-child {
                 -webkit-animation-delay: 0.25s;
@@ -134,7 +128,7 @@
             }
         }
     }
-    @keyframes fadeIn {
+    @keyframes fadeDown {
         from {
             opacity: 0;
             transform: translate3d(0, -20%, 0);
