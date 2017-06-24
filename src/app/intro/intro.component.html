@@ -7,20 +7,20 @@
       <p class="page-title">
         UI/ UX Developer
       </p>
-      <div id="menu">
-        <p>
-          Where to, cap?
-        </p>
-        <div class="container" *ngFor="let menuItem of menuItems">
-          <a href="{{menuItem.href}}">
-            <div class="button">
-              <i class="fa fa-{{menuItem.icon}}" aria-hidden="true"></i>
-              <p>
-                {{ menuItem.label }}
-              </p>
-            </div>
-          </a>
-        </div>
+      <p id="menu-header">
+        Welcome. Where to, cap?
+      </p>
+      <div class="overlay overlay-boxify">
+        <nav>
+          <ul>
+            <li><a href="#about" class="page-scroll"><i class="fa fa-user-o"></i>About Me</a></li>
+            <li><a href="#skills" class="page-scroll"><i class="fa fa-terminal"></i>My Skills</a></li>
+          </ul>
+          <ul>
+            <li><a href="#portfolio" class="page-scroll"><i class="fa fa-desktop"></i>My Portfolio</a></li>
+            <li><a href="#contact" class="page-scroll"><i class="fa fa-envelope-open-o"></i>Contact Me</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>

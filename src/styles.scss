@@ -7,20 +7,8 @@ $primary: #C25447;
 $purple: #5c5edc;
 $secondary: #2a2b30;
 $purplish: #474a6b;
-$orange: orange;
-// $mercury: #A9ADBB;
-// $venus: #EB6845;
-$earth: #4A89DC;
-// $mars: #e60000;
-// $jupiter: #EB6845;
-// $saturn: #FFAA44;
-// $uranus: #3BAFDA;
-// $neptune: #3399DD;
-$planet-color: #C25447;
-$moon-color: #9E9E9E;
-$gravitation-constant: 6.673;
-$t: 1.92; // Orbital speed
-$animation: orbit;
+$orange: #FF6600;
+$blue: #4A89DC;
 
 body {
     margin: 0;
@@ -35,4 +23,9 @@ body {
 
 span {
     font-size: 18px;
+}
+
+h2 {
+    font-family: "Nunito:400","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
 }
