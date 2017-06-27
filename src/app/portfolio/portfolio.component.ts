@@ -19,22 +19,22 @@ export class PortfolioComponent implements OnInit {
       {
         title: "Lighthouse Investments",
         img: "../assets/img/portfolio/lhInvestments.png",
-        link: "#about"
+        link: "http://drewdud.com/targal/"
       },
       {
         title: "NightLight Branson",
         img: "../assets/img/portfolio/office.jpg",
-        link: ""
+        link: "http://drewdud.com/nl/"
       },
       {
         title: "Bolivar Chamber of Commerce",
         img: "../assets/img/portfolio/bcoc.png",
-        link: "#intro"
+        link: "http://bolivarchamber.com"
       },
       {
         title: "Shuffle Ninja",
         img: "../assets/img/portfolio/ninja.png",
-        link: ""
+        link: "http://drewdud.com/game/"
       }
     ]
   }
