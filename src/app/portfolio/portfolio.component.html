@@ -9,20 +9,18 @@
 	</div>
   <div class="container">
     <div class="row">
-      <ul>
-        <li class="col-sm-6 col-lg-3" *ngFor="let project of projects">
-          <figure>
-            <a href="{{ project.link }}" target="_blank">
-              <img src="{{ project.img }}" alt="Skill Image" class="image">
-              <figcaption>
-                <div class="caption-content">
-                  <div class="title">{{ project.title }}</div>
-                </div>
-              </figcaption>
-            </a>
-          </figure>
-        </li>
-      </ul>
+      <div class="col-sm-6 col-lg-3" *ngFor="let project of projects">
+        <figure>
+          <a href="{{ project.link }}" target="_blank">
+            <img src="{{ project.img }}" alt="Skill Image" class="image">
+            <figcaption>
+              <div class="caption-content">
+                <div class="title">{{ project.title }}</div>
+              </div>
+            </figcaption>
+          </a>
+        </figure>
+      </div>
     </div>
   </div>
 </div>

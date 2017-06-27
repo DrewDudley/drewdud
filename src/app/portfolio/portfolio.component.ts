@@ -18,22 +18,22 @@ export class PortfolioComponent implements OnInit {
     this.projects = [
       {
         title: "Lighthouse Investments",
-        img: "../assets/img/portfolio/lhInvestments.png",
+        img: "http://drewdud.com/ng/assets/img/portfolio/lhInvestments.png",
         link: "http://drewdud.com/targal/"
       },
       {
         title: "NightLight Branson",
-        img: "../assets/img/portfolio/office.jpg",
+        img: "http://drewdud.com/ng/assets/img/portfolio/office.jpg",
         link: "http://drewdud.com/nl/"
       },
       {
         title: "Bolivar Chamber of Commerce",
-        img: "../assets/img/portfolio/bcoc.png",
+        img: "http://drewdud.com/ng/assets/img/portfolio/bcoc.png",
         link: "http://bolivarchamber.com"
       },
       {
         title: "Shuffle Ninja",
-        img: "../assets/img/portfolio/ninja.png",
+        img: "http://drewdud.com/ng/assets/img/portfolio/ninja.png",
         link: "http://drewdud.com/game/"
       }
     ]
