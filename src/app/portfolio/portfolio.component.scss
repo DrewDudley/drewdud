@@ -1,13 +1,66 @@
 @import "../app.component.scss";
 
 #portfolio {
-    padding: 100px 120px;
+    background: #F4F4F4;
+    #section-header {
+        padding: 50px 120px;
+    }
+    
     .container {
-        width: 100%;
-        padding: 3em 0 0 0;
+        width: 100vw;
+        max-width: 100vw;
+        padding: 0 !important;
+        margin: 0 !important;
         height: 100%;
+        overflow: hidden !important;
+        padding-bottom: 50px !important;
+        margin-left: -22px !important;
+        ul li {
+            float: left;
+            list-style: none;
+            padding: 0 !important;
+            margin: 0 !important;
+            figure {
+                position: relative;
+                overflow: hidden;
+                padding: 0 !important;
+                margin: 0 !important;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    -webkit-transition: all .15s ease-in-out;
+                    transition: all .15s ease-in-out;
+                }
+                figcaption {
+                    color: #fff;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 35% 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(29, 30, 33, 0.85);
+                    text-align: center;
+                    font-size: 24px;
+                    opacity: 0;
+                    -webkit-transition: all .15s ease-in-out;
+                    transition: all .15s ease-in-out;
+                }
+            }
+            figure:hover img, figure:focus img {
+                -webkit-transform: scale(1.15);
+                -ms-transform: scale(1.15);
+                transform: scale(1.15);
+            }
+            figure:hover figcaption, .container figure:focus figcaption {
+                opacity: 1;
+            }
+        }
+        
     }
     @media only screen and (max-width: 1250px) {
-        padding: 50px 30px;
+        #section-header {
+            padding: 50px 30px;
+        }
     }
 }

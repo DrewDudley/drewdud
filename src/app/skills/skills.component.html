@@ -2,11 +2,11 @@
   <!--Current skills-->
   <div>
     <p class=page-title>
-      Here's what I know...
+      I'm not here to waste your time, so let's cut to the chase. Here's what I know...
     </p>
     <div class="container">
       <div class="row">
-        <div class="col-lg-2" *ngFor="let skill of skills">
+        <div class="col-sm-4 col-lg-2" *ngFor="let skill of skills">
           <h4>
             <img src="{{ skill.img }}" class="skill-img" *ngIf="skill.img">
           </h4>
@@ -25,7 +25,7 @@
     </p>
     <div class="container">
       <div class="row">
-        <div class="col-lg-2" *ngFor="let sortaSkill of sortaSkills">
+        <div class="col-sm-4 col-lg-2" *ngFor="let sortaSkill of sortaSkills">
           <h4>
             <img src="{{ sortaSkill.img }}" class="skill-img" *ngIf="sortaSkill.img">
           </h4>
@@ -44,7 +44,7 @@
     </p>
     <div class="container">
       <div class="row">
-        <div class="col-lg-2" *ngFor="let futureSkill of futureSkills">
+        <div class="col-sm-4 col-lg-2" *ngFor="let futureSkill of futureSkills">
           <h4>
             <img src="{{ futureSkill.img }}" class="skill-img" *ngIf="futureSkill.img">
           </h4>

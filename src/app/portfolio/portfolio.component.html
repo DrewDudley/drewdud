@@ -1,34 +1,28 @@
 <div id="portfolio">
-  <p class="page-title">
-    My Portfolio
-  </p>
-  <span>
-    I've only been in the business for a few years, but here are a few select projects I've done for some pretty great businesses and organizations.
-  </span>
-  <div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 ">
-          <h4>
-            Bolivar Chamber of Commerce
-          </h4>
-        </div>
-        <div class="col-md-3">
-          <h4>
-            Lighthouse Investments
-          </h4>
-        </div>
-        <div class="col-md-3">
-          <h4>
-            NightLight Branson
-          </h4>
-        </div>
-        <div class="col-md-3">
-          <h4>
-            Shuffle Ninja
-          </h4>
-        </div>
-      </div>
+	<div id="section-header">
+		<p class="page-title">
+			My Portfolio
+		</p>
+		<span>
+			I've only been in the business for a few years, but here are a few select projects I've done for some pretty great businesses and organizations.
+		</span>
+	</div>
+  <div class="container">
+    <div class="row">
+      <ul>
+        <li class="col-sm-6 col-lg-3" *ngFor="let project of projects">
+          <figure>
+            <a href="{{ project.link }}">
+              <img src="{{ project.img }}" alt="Skill Image" class="image">
+              <figcaption>
+                <div class="caption-content">
+                  <div class="title">{{ project.title }}</div>
+                </div>
+              </figcaption>
+            </a>
+          </figure>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
