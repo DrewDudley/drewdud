@@ -2,10 +2,38 @@
 
 #contact {
     height: 100%;
-    padding: 100px 120px;
-    background-color: $background;
+    padding: 50px 120px;
+    background: radial-gradient(circle at top, #1B2735 0%, #090A0F 100%);
     color: white;
-    @media only screen and (max-width: 1250px) {
+    .container {
+        text-align: center;
+    }
+    .col-xl-1 {
+        padding: 75px 0 50px 0;
+        i {
+            font-size: 1.4em;
+            color: #FFF;
+            -webkit-transition: all .15s ease-in-out;
+            transition: all .15s ease-in-out;
+        }
+        i:hover {
+            text-shadow: 0px 0px 25px #FFF;
+        }
+    }
+    @media only screen and (max-width: 1200px) {
         padding: 50px 30px;
+        .container {
+            padding-top: 50px;
+            text-align: left;
+            width: 100%;
+        }
+        .col-xl-1 {
+            padding: 35px 0 35px 0;
+            margin: 0;
+            text-align: left;
+        }
+        .col-xl-1:not(:last-child) {
+            border-bottom: 1px dotted #fff;
+        }
     }
 }

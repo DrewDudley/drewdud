@@ -65,6 +65,11 @@ export class SkillsComponent implements OnInit {
         name: "Spanish",
         description: "One of my favorite things to do is learn about other cultures and languages. I've studied Spanish for a few years now and I'm near fluent.",
         img: "http://drewdud.com/ng/assets/img/skills/mexico.png"
+      },
+      {
+        name: "Tennis",
+        description: "Gotta relax somehow",
+        img: "http://drewdud.com/ng/assets/img/skills/tennis.png"
       }
     ];
 
@@ -83,12 +88,12 @@ export class SkillsComponent implements OnInit {
         name: "Backend",
         description: "I definitely prefer front-end development to backend, but I would love to become a full-stack dev.",
         img: "http://drewdud.com/ng/assets/img/skills/db.png"
-      },
-      {
-        name: "Snorkeling",
-        description: "Why not have a little fun in life, huh?",
-        img: "http://drewdud.com/ng/assets/img/skills/snorkeling.jpg"
       }
+      // {
+      //   name: "Snorkeling",
+      //   description: "Why not have a little fun in life, huh?",
+      //   img: "http://drewdud.com/ng/assets/img/skills/snorkeling.jpg"
+      // }
     ];
   }
 }

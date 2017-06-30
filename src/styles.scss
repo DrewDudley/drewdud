@@ -3,7 +3,7 @@
 
 // Global colors
 $background: #1d1e21;
-$primary: #C25447;
+$red: #C25447;
 $purple: #5c5edc;
 $secondary: #2a2b30;
 $purplish: #474a6b;
@@ -12,7 +12,7 @@ $blue: #4A89DC;
 
 body {
     margin: 0;
-    font-family: "Nunito:400","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
 }
@@ -23,9 +23,16 @@ body {
 
 span {
     font-size: 18px;
+    font-family: "Nunito:400","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-h2 {
-    font-family: "Nunito:400","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 300;
+.hover-link {
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: $purple;
+}
+
+.hover-link:hover, .hover-link:focus {
+    letter-spacing: 2px;
+    text-decoration: none;
 }

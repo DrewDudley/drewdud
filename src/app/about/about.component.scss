@@ -20,5 +20,12 @@
         width: 14em;
         border-radius: 50%;
         border: .6em solid $purple;
+        -webkit-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out;
+    }
+    .col-xl-2:hover .about-img {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        border-color: $red;
     }
 }
