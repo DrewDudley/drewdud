@@ -3,32 +3,35 @@
 
 // Global colors
 $background: #1d1e21;
-$red: #C25447;
+$mars: #C25447;
 $purple: #5c5edc;
 $secondary: #2a2b30;
-$purplish: #474a6b;
+$dark-purple: #474a6b;
 $orange: #FF6600;
 $blue: #4A89DC;
+$moon: #E6E6E6;
 
 body {
     margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    // font-family: 'Josefin Sans', sans-serif;
+    font-family: "Nunito:400","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
 }
 
 .page-title {
-    font-size: 32px;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 span {
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Nunito:400","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .hover-link {
-    -webkit-transition: all .15s ease-in-out;
-    transition: all .15s ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
     color: $purple;
 }
 

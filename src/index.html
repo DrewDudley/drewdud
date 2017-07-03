@@ -2,10 +2,18 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Drew Dudley | UI Developer</title>
+  <!--<title>Drew Dudley | UI Developer</title>-->
+  <!-- Change page title when focus is lost -->
+  <script>
+    window.addEventListener('focus', function() {
+    document.title = 'Drew Dudley | UI/UX Developer';});
+    window.addEventListener('blur', function() {
+    document.title = "Miss You :(";});
+  </script>
   <base href="./">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, width=device-width">
+  <meta name="keywords" content="drew, dudley, drew dudley, drew j dudley, freelance, freelancer, html5, css3, one page, portfolio, web design, ui, ux" />
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="http://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" type="text/css">
@@ -22,6 +30,12 @@
         $('html, body').animate({scrollTop: $(hash).offset().top}, 750);
       });
     })
+  </script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $( function() {
+      $( ".draggable" ).draggable({containment: "body", scroll: false});
+    } );
   </script>
 </body>
 </html>
