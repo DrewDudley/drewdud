@@ -18,12 +18,12 @@ export class ContactComponent implements OnInit {
     this.contactLinks = [
       {
         icon: "facebook",
-        href: "https://www.facebook.com/drew.dudley.161",
+        href: "https://www.facebook.com/drew.dudley.161/",
         class: "skill-link"
       },
       {
         icon: "twitter",
-        href: "https://twitter.com/drewdudleyyy",
+        href: "https://twitter.com/drewdudleyyy/",
         class: "skill-link"
       },
       {
@@ -34,6 +34,11 @@ export class ContactComponent implements OnInit {
       {
         icon: "linkedin",
         href: "https://www.linkedin.com/in/drewdudley/",
+        class: "skill-link"
+      },
+      {
+        icon: "github",
+        href: "https://github.com/DrewDudley/",
         class: "skill-link"
       },
       {

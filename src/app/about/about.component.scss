@@ -2,30 +2,30 @@
 
 #about {
     padding: 100px 120px;
-    @media only screen and (max-width: 1250px) {
-        padding: 40px 10px;
-        .about-img {
-            margin-bottom: 25px;
-        }
-    }
     .container {
         width: 100%;
     }
     .col-xl-2 {
         text-align: center;
         margin: auto;
-    }
-    .about-img {
-        height: 14em;
-        width: 14em;
-        border-radius: 50%;
-        border: .5em solid $mars;
-        -webkit-transition: all .25s ease-in-out;
-        transition: all .25s ease-in-out;
+        .about-img {
+            height: 14em;
+            width: 14em;
+            border-radius: 50%;
+            border: .5em solid $mars;
+            -webkit-transition: all .25s ease-in-out;
+            transition: all .25s ease-in-out;
+        }
     }
     .container:hover .about-img {
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
         border-color: $dark-purple;
+    }
+    @media only screen and (max-width: 1250px) {
+        padding: 50px 5px;
+        .about-img {
+            margin-bottom: 25px;
+        }
     }
 }

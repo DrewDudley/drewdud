@@ -2,7 +2,7 @@
 
 #contact {
     height: 100%;
-    padding: 50px 120px;
+    padding: 100px 120px 0 120px;
     background: radial-gradient(circle at top, #1B2735 0%, #090A0F 100%);
     color: white;
     .container {
@@ -20,8 +20,57 @@
             text-shadow: 0px 0px 25px #FFF;
         }
     }
+    form {
+        margin: 40px auto;
+        font-size: 12pt;
+    }
+    input, textarea {
+        height: 50px;
+        background-color: transparent;
+        border-style: none;
+        padding: 25px;
+        margin-top: 20px;
+        color: #fff;
+        transition: all 200ms ease-in-out;
+        -webkit-transition: all 200ms ease-in-out;
+        -moz-transition: all 200ms ease-in-out;
+        -ms-transition: all 200ms ease-in-out;
+        -o-transition: all 200ms ease-in-out;
+        border-radius: 0;
+        border-bottom: 1px solid #fff;
+    }
+    textarea {
+        padding: 16px;
+        margin-top: 0px;
+        height: 200px;
+    }
+    input:focus, textarea:focus {
+        outline: none;
+        border-bottom: 1px solid $dark-purple;
+        background-color:rgba(0, 0, 0, 0.4);
+    }
+    .form-icon {
+        position: absolute;
+        text-indent: 5px;
+        margin-top: 31px;
+        color: #FFF;
+        font-size: 26px;
+    }
+    .form-control {
+        text-indent: 30px;
+    }
+    .fa-comment-o {
+        margin-top: 9px;
+        font-size: 28px;
+    }
+    #message {
+        text-indent: 38px;
+    }
+    .message-placeholder {
+        margin-top: 15px;
+    }
     @media only screen and (max-width: 1200px) {
-        padding: 50px 30px;
+        padding: 50px 20px;
         .container {
             padding-top: 50px;
             text-align: left;
