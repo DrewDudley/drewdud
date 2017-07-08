@@ -5,11 +5,11 @@
 $background: #1d1e21;
 $mars: #C25447;
 $purple: #5c5edc;
-$secondary: #2a2b30;
 $dark-purple: #474a6b;
 $orange: #FF6600;
-$blue: #4A89DC;
+$earth: #4A89DC;
 $moon: #E6E6E6;
+$mint: #34B3A0;
 
 body {
     margin: 0;
@@ -31,11 +31,11 @@ span {
 .hover-link {
     -webkit-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
-    color: $mars;
+    color: $mint;
 }
 
 .hover-link:hover, .hover-link:focus {
     letter-spacing: 2px;
     text-decoration: none;
-    color: $purple;
+    color: $mint;
 }
