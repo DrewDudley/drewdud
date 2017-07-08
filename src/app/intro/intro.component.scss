@@ -173,7 +173,7 @@
                 width: 22px;
                 left: 3px;
                 top: 0;
-                background: #FFF;
+                background: $dark-purple;
                 animation: flag-unfurl 10s cubic-bezier(0.645, 0.045, 0.355, 1);
             }
         }
@@ -245,8 +245,6 @@
                         min-width: 105px;
                         height: 95px;
                         font-size: 10px;
-                        color: $dark-purple;
-                        border: 2px solid $dark-purple;
                     }
                 }
             }
