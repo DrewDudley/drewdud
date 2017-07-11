@@ -52,6 +52,11 @@ export class SkillsComponent implements OnInit {
         name: "PhotoShop/ Illustrator/ InDesign",
         description: "I know my way around PhotoShop, Illustrator, and InDesign pretty well.",
         img: "http://drewdud.com/assets/img/skills/adobe.png"
+      },
+      {
+        name: "Being Human",
+        description: "I know my way around PhotoShop, Illustrator, and InDesign pretty well.",
+        img: "http://neomam.com/interactive/moon-mining/images/robot.png"
       }
     ];
 
