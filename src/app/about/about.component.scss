@@ -22,10 +22,43 @@
         transform: rotateY(180deg);
         border-color: $mars;
     }
+    #satellite {
+        float: right;
+        right: 10px;
+        width: 125px;
+        animation: bobble 2500ms infinite ease-in-out;
+        -webkit-animation: bobble 2500ms infinite ease-in-out;
+    }
     @media only screen and (max-width: 1250px) {
         padding: 50px 5px;
         .about-img {
             margin-bottom: 25px;
+        }
+    }
+    @keyframes bobble {
+        0% {
+            transform: translateY(0px);
+            animation-timing-function: ease-in;
+        }
+        50% {
+            transform: translateY(12px);
+            animation-timing-function: ease-out;
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    @-webkit-keyframes bobble {
+        0% {
+            -webkit-transform: translateY(0px);
+            -webkit-animation-timing-function: ease-in;
+        }
+        50% {
+            -webkit-transform: translateY(12px);
+            -webkit-animation-timing-function: ease-out;
+        }
+        100% {
+            -webkit-transform: translateY(0px);
         }
     }
 }
