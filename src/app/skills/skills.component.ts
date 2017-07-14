@@ -20,65 +20,69 @@ export class SkillsComponent implements OnInit {
     this.skills = [
       {
         name: "HTML/ HTML5",
-        img: "http://drewdud.com/assets/img/skills/html5.png"
+        img: "assets/img/skills/html5.png"
       },
       {
         name: "CSS/ SASS",
-        img: "http://drewdud.com/assets/img/skills/sass.png"
+        img: "assets/img/skills/sass.png"
       },
       {
         name: "JavaScript/ TypeScript",
-        img: "http://drewdud.com/assets/img/skills/js.png"
+        img: "assets/img/skills/js.png"
       },
       {
         name: "Angular2",
-        img: "http://drewdud.com/assets/img/skills/angular.svg"
+        img: "assets/img/skills/angular.svg"
       },
       {
         name: "Bootstrap",
-        img: "http://drewdud.com/assets/img/skills/bootstrap.png"
+        img: "assets/img/skills/bootstrap.png"
       },
       {
         name: "Git",
-        img: "http://drewdud.com/assets/img/skills/git.png"
+        img: "assets/img/skills/git.png"
       },
       {
         name: "PhotoShop/ Illustrator/ InDesign",
-        img: "http://drewdud.com/assets/img/skills/adobe.png"
+        img: "assets/img/skills/adobe.png"
       },
       {
-        name: "How to Be Human",
-        img: "http://drewdud.com/assets/img/skills/robot.png"
+        name: "Design & Usability",
+        img: "assets/img/skills/eye.png"
+      },
+      {
+        name: "Being Human",
+        img: "assets/img/skills/human.png"
       }
     ];
 
     this.sortaSkills = [
       {
         name: "Java",
-        img: "http://drewdud.com/assets/img/skills/java2.png"
+        img: "assets/img/skills/java.png"
       },
       {
         name: "Spanish",
-        img: "http://drewdud.com/assets/img/skills/mexico.png"
+        img: "assets/img/skills/mexico.png"
       },
       {
         name: "Tennis",
-        img: "http://drewdud.com/assets/img/skills/tennis.png"
+        img: "assets/img/skills/tennis.png"
       }
     ];
 
     this.futureSkills = [
       {
         name: "Reactjs",
-        img: "http://drewdud.com/assets/img/skills/react.png"
+        img: "assets/img/skills/react.png"
       },
       {
         name: "German",
-        img: "http://drewdud.com/assets/img/skills/german.png"
+        img: "assets/img/skills/german.png"
       },
       {
         name: "Backend",
-        img: "http://drewdud.com/assets/img/skills/db.png"
+        img: "assets/img/skills/db.png"
       }
     ];
   }

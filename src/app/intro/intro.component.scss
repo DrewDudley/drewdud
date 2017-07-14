@@ -53,19 +53,19 @@
                 i {
                     display: block;
                     margin-bottom: 10px;
-                    font-size: 35px;
+                    font-size: 32px;
                 }
                 a {
                     display: block;
-                    padding: 28px 0;
-                    min-width: 130px;
-                    height: 120px;
+                    padding: 24px 0;
+                    min-width: 115px;
+                    height: 105px;
                     border: 2px solid $background;
                     background-color: #fff;
                     color: $background;
                     text-transform: uppercase;
                     font-weight: 400;
-                    font-size: 12px;
+                    font-size: 11px;
                     -webkit-transition: all 200ms ease-in-out;
                     transition: all 200ms ease-in-out;
                     text-decoration: none;
@@ -164,10 +164,10 @@
             width: 15px;
             top: -30px;
             left: 100px;
-            animation: flag-pole 10s cubic-bezier(0.645, 0.045, 0.355, 1);
-            -webkit-animation: flag-pole 10s cubic-bezier(0.645, 0.045, 0.355, 1);
-            -moz-animation: flag-pole 10s cubic-bezier(0.645, 0.045, 0.355, 1);
-            -ms-animation: flag-pole 10s cubic-bezier(0.645, 0.045, 0.355, 1);
+            animation: flag-pole 11s cubic-bezier(0.645, 0.045, 0.355, 1);
+            -webkit-animation: flag-pole 11s cubic-bezier(0.645, 0.045, 0.355, 1);
+            -moz-animation: flag-pole 11s cubic-bezier(0.645, 0.045, 0.355, 1);
+            -ms-animation: flag-pole 11s cubic-bezier(0.645, 0.045, 0.355, 1);
             &:before {
                 content: "";
                 position: absolute;
@@ -183,10 +183,10 @@
                 left: 3px;
                 top: 0;
                 background: $mint;
-                animation: flag-unfurl 10s cubic-bezier(0.645, 0.045, 0.355, 1);
-                -webkit-animation: flag-unfurl 10s cubic-bezier(0.645, 0.045, 0.355, 1);
-                -moz-animation: flag-unfurl 10s cubic-bezier(0.645, 0.045, 0.355, 1);
-                -ms-animation: flag-unfurl 10s cubic-bezier(0.645, 0.045, 0.355, 1);
+                animation: flag-unfurl 11s cubic-bezier(0.645, 0.045, 0.355, 1);
+                -webkit-animation: flag-unfurl 11s cubic-bezier(0.645, 0.045, 0.355, 1);
+                -moz-animation: flag-unfurl 11s cubic-bezier(0.645, 0.045, 0.355, 1);
+                -ms-animation: flag-unfurl 11s cubic-bezier(0.645, 0.045, 0.355, 1);
             }
         }
     }
