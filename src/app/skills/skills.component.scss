@@ -1,27 +1,30 @@
 @import "../app.component.scss";
 
 #skills {
-    padding: 100px 120px;
-    background: radial-gradient(circle at center, #1B2735 0%, #090A0F 100%);
-    color: white;
+    padding: 75px 120px;
+    background: radial-gradient(circle at center, $bglight 0%, $bgdark 100%);
+    color: #FFF;
     .container {
         width: 100%;
-        padding: 1.5em 0 0 0;
+        padding: 2.5em 0 0 0;
         height: 100%;
+        span {
+            color: #FFF;
+        }
     }
     .col-lg-2 {
-        padding-bottom: 4em;
+        padding-bottom: 2.5em;
         text-align: center;
     }
     .page-title {
-        padding-top: 1em;
+        padding-top: 1.5em;
     }
     .skill-img {
-        height: 5em;
+        height: 4.5em;
         margin-bottom: .4em;
     }
     hr {
-        background-color: $mint;
+        background-color: $shadow;
     }
     @media only screen and (max-width: 1250px) {
         padding: 50px 20px;

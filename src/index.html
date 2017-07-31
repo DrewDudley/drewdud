@@ -1,40 +1,42 @@
 <!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <!-- Change page title when focus is lost -->
-  <script>
-    window.addEventListener('focus', function() {
-    document.title = 'Drew Dudley | UI/UX Developer';});
-    window.addEventListener('blur', function() {
-    document.title = "Miss You :(";});
-  </script>
-  <base href="./">
+<html lang="en">
+  <head>
+    <title>Drew Dudley | UI Developer</title>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="keywords" content="drew, dudley, drew dudley, drew dud, drew j dudley, ui, ux, ui ux, developer, freelance, freelancer, web design, web designer, design, designer, angular2">
+    <meta name="description" content="My name's Drew. I like to code.">
+    <meta name="author" content="Drew Dudley">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+  </head>
+  <body>
+    <app-root></app-root>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.link').on('click', function(event) {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({scrollTop: $(hash).offset().top}, 600);
+        });
+      })
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+      $( function() {
+        $( ".draggable" ).draggable({containment: "body", scroll: false});
+      } );
+    </script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, width=device-width">
-  <meta name="keywords" content="drew, dudley, drew dudley, drew j dudley, freelance, freelancer, html5, css3, one page, portfolio, web design, ui, ux" />
-
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-  <link href="http://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-</head>
-<body>
-  <app-root>Loading...</app-root>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('.link').on('click', function(event) {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({scrollTop: $(hash).offset().top}, 750);
-      });
-    })
-  </script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-    $( function() {
-      $( ".draggable" ).draggable({containment: "body", scroll: false});
-    } );
-  </script>
-</body>
+      ga('create', 'UA-103575246-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>

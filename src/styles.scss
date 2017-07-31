@@ -2,42 +2,75 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 // Global colors
-$background: #1d1e21;
+$bgdark: #090A0F;
+$bglight: #1B2735;
 $mars: #C25447;
 $purple: #5c5edc;
-$dark-purple: #474a6b;
-$orange: #FF6600;
-$earth: #4A89DC;
+$shadow: #474a6b;
 $moon: #E6E6E6;
 $mint: #34B3A0;
+$ionic: #4e8df7;
 
 body {
     margin: 0;
-    font-family: "Nunito:400","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-family: "Avenir Next","Helvetica Neue",Helvetica,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    color: $shadow;
+    line-height: 2em;
+    cursor: default;
 }
 .page-title {
-    font-size: 30px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
 }
 span {
+    font-family: "Avenir Next","Helvetica Neue",Helvetica,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
     font-size: 16px;
-    font-family: "Nunito:400","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-.hover-link {
-    -webkit-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
-    color: $mint;
-}
-.hover-link:hover, .hover-link:focus {
-    letter-spacing: 2px;
-    text-decoration: none;
-    color: $mint;
+    color: $shadow;
 }
 .draggable {
     cursor: grab;
 }
 .draggable:active {
     cursor: grabbing;
+}
+span a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: $ionic;
+}
+@media only screen and (min-width: 1250px) {
+    span a:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        height: 1.5px;
+        width: 0;
+    }
+    span a:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+        height: 1.5px;
+        width: 0;
+        background: $ionic;
+        transition: width .25s ease;
+    }
+    span a:hover:before {
+        width: 100%;
+        background: $ionic;
+        transition: width .25s ease;
+    }
+    span a:hover:after {
+        width: 100%;
+        background: transparent;
+    }
 }

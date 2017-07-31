@@ -19,7 +19,7 @@ export class PortfolioComponent implements OnInit {
       {
         title: "Lighthouse Investments",
         img: "http://drewdud.com/assets/img/portfolio/lhInvestments.png",
-        link: "http://drewdud.com/targal/"
+        link: "http://targetallocation.com"
       },
       {
         title: "NightLight Branson",
@@ -38,5 +38,4 @@ export class PortfolioComponent implements OnInit {
       }
     ]
   }
-
 }

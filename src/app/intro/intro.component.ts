@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroComponent implements OnInit {
   menuItems: Array<any>;
+  spaceTheme: boolean = true;
 
   constructor() { }
 
@@ -35,7 +36,7 @@ export class IntroComponent implements OnInit {
         label: "Contact Me",
         icon: "envelope-open-o",
         href: "#contact"
-      },
+      }
     ]
   }
 }

@@ -1,6 +1,7 @@
 @import "../app.component.scss";
 
 #about {
+    background: #F4F4F4;
     padding: 100px 120px;
     .container {
         width: 100%;
@@ -12,19 +13,20 @@
             height: 14em;
             width: 14em;
             border-radius: 50%;
-            border: .5em solid $mint;
+            border: .5em solid $ionic;
             -webkit-transition: all .25s ease-in-out;
             transition: all .25s ease-in-out;
         }
     }
-    .container:hover .about-img {
+    .col-xl-2:hover .about-img {
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
-        border-color: $mars;
+        border-color: $mint;
     }
     #satellite {
         float: right;
         right: 10px;
+        top: -8px;
         width: 125px;
         animation: bobble 2500ms infinite ease-in-out;
         -webkit-animation: bobble 2500ms infinite ease-in-out;
@@ -32,7 +34,7 @@
     @media only screen and (max-width: 1250px) {
         padding: 50px 5px;
         .about-img {
-            margin-bottom: 25px;
+            margin-bottom: 40px;
         }
     }
     @keyframes bobble {
