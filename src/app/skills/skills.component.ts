@@ -31,7 +31,7 @@ export class SkillsComponent implements OnInit {
         img: "assets/img/skills/js.png"
       },
       {
-        name: "Angular2",
+        name: "Angular",
         img: "assets/img/skills/angular.svg"
       },
       {

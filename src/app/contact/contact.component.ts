@@ -47,7 +47,7 @@ export class ContactComponent implements OnInit {
         class: "skill-link"
       },
       {
-        icon: "angle-double-up",
+        icon: "angle-up",
         href: "#intro",
         class: "link"
       }
