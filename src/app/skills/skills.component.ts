@@ -39,6 +39,10 @@ export class SkillsComponent implements OnInit {
         img: "assets/img/skills/bootstrap.png"
       },
       {
+        name: "WordPress",
+        img: "assets/img/skills/wordpress.png"
+      },
+      {
         name: "Git",
         img: "assets/img/skills/git.png"
       },
@@ -50,10 +54,6 @@ export class SkillsComponent implements OnInit {
         name: "Design & Usability",
         img: "assets/img/skills/eye.png"
       }
-      // {
-      //   name: "Being Human",
-      //   img: "assets/img/skills/heart.png"
-      // }
     ];
 
     this.sortaSkills = [

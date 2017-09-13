@@ -2,33 +2,30 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 // Global colors
-$bgdark: #090A0F;
-$bglight: #1B2735;
+$darker: #090A0F;
+$dark: #1a2533;
 $mars: #C25447;
-$purple: #5c5edc;
 $shadow: #474a6b;
 $moon: #E6E6E6;
 $mint: #34B3A0;
 $ionic: #4e8df7;
+$amazon: #131a22;
 
 body {
     margin: 0;
     font-family: "Avenir Next","Helvetica Neue",Helvetica,sans-serif;
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
     font-size: 16px;
     color: $shadow;
     line-height: 2em;
     cursor: default;
 }
 .page-title {
-    font-size: 28px;
+    font-size: 26px;
 }
 span {
     font-family: "Avenir Next","Helvetica Neue",Helvetica,sans-serif;
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-size: 16px;
     color: $shadow;
 }
 .draggable {
@@ -44,6 +41,7 @@ span a {
     color: $ionic;
 }
 @media only screen and (min-width: 1250px) {
+    // Sliding underline effect
     span a:before {
         content: '';
         display: block;

@@ -2,7 +2,7 @@
 
 #skills {
     padding: 75px 120px;
-    background: radial-gradient(circle at center, $bglight 0%, $bgdark 100%);
+    background: radial-gradient(circle at center, $dark 0%, $darker 100%);
     color: #FFF;
     .container {
         width: 100%;
@@ -20,7 +20,7 @@
         padding-top: 1.5em;
     }
     .skill-img {
-        height: 4.5em;
+        height: 4em;
         margin-bottom: .4em;
     }
     hr {

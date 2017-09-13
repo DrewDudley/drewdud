@@ -10,10 +10,13 @@
         text-align: center;
         margin: auto;
         .about-img {
-            height: 14em;
-            width: 14em;
+            margin-top: 10px;
+            height: 14.25em;
+            width: 14.25em;
             border-radius: 50%;
-            border: .5em solid $ionic;
+            background: $ionic;
+            padding: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.19);
             -webkit-transition: all .25s ease-in-out;
             transition: all .25s ease-in-out;
         }
@@ -21,13 +24,13 @@
     .col-xl-2:hover .about-img {
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
-        border-color: $mint;
+        background: $mint;
     }
     #satellite {
         float: right;
         right: 10px;
-        top: -8px;
-        width: 125px;
+        top: 10px;
+        width: 105px;
         animation: bobble 2500ms infinite ease-in-out;
         -webkit-animation: bobble 2500ms infinite ease-in-out;
     }
@@ -35,6 +38,10 @@
         padding: 50px 5px;
         .about-img {
             margin-bottom: 40px;
+        }
+        #satellite {
+            width: 95px;
+            top: -10px;
         }
     }
     @keyframes bobble {

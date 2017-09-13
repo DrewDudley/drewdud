@@ -8,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class IntroComponent implements OnInit {
   menuItems: Array<any>;
   spaceTheme: boolean = true;
+  timeOfDay: any = 'afternoon';
 
   constructor() { }
 
   ngOnInit() {
     this.loadMenuItems();
+    this.getTimeOfDay();
   }
 
   loadMenuItems() {
@@ -38,5 +40,16 @@ export class IntroComponent implements OnInit {
         href: "#contact"
       }
     ]
+  }
+
+  getTimeOfDay() {
+    let time = new Date().getHours();
+    if (time < 12) {
+      this.timeOfDay = 'Good morning';
+    } else if (time < 17) {
+      this.timeOfDay = 'Good afternoon';
+    } else {
+      this.timeOfDay = 'Good evening';
+    }
   }
 }
