@@ -3,16 +3,18 @@
 #intro {
     height: 100%;
     min-height: 100vh;
-    background: radial-gradient(circle at bottom, $dark 0%, $darker 100%);
+    padding: 50px 20px;
+    background: radial-gradient(circle at center, $dark 0%, $darkest 100%);
     max-width: 100vw;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     #intro-text {
-        margin: 17% 15px;
         text-align: center;
         animation: fadeIn .25s ease-in both;
         -webkit-animation: fadeIn .25s ease-in both;
         -moz-animation: fadeIn .25s ease-in both;
-        -ms-animation: fadeIn .25s ease-in both;
         animation-delay: 750ms;
         h2 {
             color: #fff;
@@ -26,10 +28,9 @@
             font-size: 18px;
             padding: 1em 15px 0 15px;
             color: white;
-            animation: fadeDown 0.25s ease-in both;
-            -webkit-animation: fadeDown 0.25s ease-in both;
-            -moz-animation: fadeDown 0.25s ease-in both;
-            -ms-animation: fadeDown 0.25s ease-in both;
+            animation: fadeDown .25s ease-in both;
+            -webkit-animation: fadeDown .25s ease-in both;
+            -moz-animation: fadeDown .25s ease-in both;
             animation-delay: 2.25s;
         }
     }
@@ -62,13 +63,13 @@
                     color: white;
                     text-transform: uppercase;
                     font-size: 11px;
-                    -webkit-transition: all 200ms ease-in-out;
                     transition: all 200ms ease-in-out;
+                    -webkit-transition: all 200ms ease-in-out;
                     text-decoration: none;
                 }
                 a:hover, a:focus {
                     background: rgba(0,0,0,.2);
-                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.19);
+                    box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .19);
                 }
             }
         }
@@ -80,10 +81,10 @@
     .overlay-boxify {
         nav {
             ul li {
-                animation: fadeDown 0.25s ease-in both;
-                -webkit-animation: fadeDown 0.25s ease-in both;
-                -moz-animation: fadeDown 0.25s ease-in both;
-                -ms-animation: fadeDown 0.25s ease-in both;
+                animation: fadeDown .25s ease-in both;
+                -webkit-animation: fadeDown .25s ease-in both;
+                -moz-animation: fadeDown .25s ease-in both;
+                -ms-animation: fadeDown .25s ease-in both;
             }
             ul:first-child li:first-child {
                 animation-delay: 3.5s;
@@ -160,10 +161,10 @@
             width: 15px;
             top: -30px;
             left: 100px;
-            animation: flag-pole 11s cubic-bezier(0.645, 0.045, 0.355, 1);
-            -webkit-animation: flag-pole 11s cubic-bezier(0.645, 0.045, 0.355, 1);
-            -moz-animation: flag-pole 11s cubic-bezier(0.645, 0.045, 0.355, 1);
-            -ms-animation: flag-pole 11s cubic-bezier(0.645, 0.045, 0.355, 1);
+            animation: flag-pole 11s cubic-bezier(.645, .045, .355, 1);
+            -webkit-animation: flag-pole 11s cubic-bezier(.645, .045, .355, 1);
+            -moz-animation: flag-pole 11s cubic-bezier(.645, .045, .355, 1);
+            -ms-animation: flag-pole 11s cubic-bezier(.645, .045, .355, 1);
             &:before {
                 content: "";
                 position: absolute;
@@ -179,19 +180,17 @@
                 left: 3px;
                 top: 0;
                 background: $ionic;
-                animation: flag-unfurl 11s cubic-bezier(0.645, 0.045, 0.355, 1);
-                -webkit-animation: flag-unfurl 11s cubic-bezier(0.645, 0.045, 0.355, 1);
-                -moz-animation: flag-unfurl 11s cubic-bezier(0.645, 0.045, 0.355, 1);
-                -ms-animation: flag-unfurl 11s cubic-bezier(0.645, 0.045, 0.355, 1);
+                animation: flag-unfurl 11s cubic-bezier(.645, .045, .355, 1);
+                -webkit-animation: flag-unfurl 11s cubic-bezier(.645, .045, .355, 1);
+                -moz-animation: flag-unfurl 11s cubic-bezier(.645, .045, .355, 1);
+                -ms-animation: flag-unfurl 11s cubic-bezier(.645, .045, .355, 1);
             }
         }
     }
     #mars {
         overflow: hidden;
-        margin-top: 100px;
-        margin-left: 75px;
-        left: 100px;
-        top: 60%;
+        left: 175px;
+        top: 68%;
         position: absolute;
         height: 150px;
         width: 150px;
@@ -276,9 +275,8 @@
         90%  { width: 22px; }
         100% { width: 22px; }
     }
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1250px) {
         #intro-text {
-            margin-top: 28%;
             text-align: center;
             padding: 0;
             h2 {
@@ -291,6 +289,7 @@
             }
             #menu-header {
                 font-size: 1em;
+                padding-top: 0 !important;
             }
         }
         .overlay {
@@ -302,14 +301,14 @@
                         height: 95px;
                         font-size: 10px;
                         margin-bottom: 20px;
-                        background: rgba(0,0,0,.6);
+                        background: rgba(0,0,0,.7);
                     }
                 }
             }
         }
         #moon {
-            right: 90px;
-            top: 47%;
+            left: -50px;
+            top: 50vh;
         }
         #mars {
             display: none;

@@ -2,8 +2,8 @@
 
 #contact {
     height: 100%;
-    padding: 100px 120px 40px 120px;
-    background: radial-gradient(circle at top, $dark 0%, $darker 100%);
+    padding: 120px;
+    background: radial-gradient(circle at top, $dark 0%, $darkest 100%);
     color: #FFF;
     span {
         color: #FFF;
@@ -12,7 +12,7 @@
         text-align: center;
     }
     .col-xl-1 {
-        padding: 75px 0 50px 0;
+        padding-top: 75px;
         i {
             font-size: 1.4em;
             color: #FFF;
@@ -25,56 +25,56 @@
             text-shadow: 0px 0px 25px #FFF;
         }
     }
-    form {
-        margin: 40px auto;
-        font-size: 12pt;
-    }
-    input, textarea {
-        height: 50px;
-        background-color: transparent;
-        border-style: none;
-        padding: 25px;
-        margin-top: 20px;
-        color: #FFF;
-        transition: all 200ms ease-in-out;
-        -webkit-transition: all 200ms ease-in-out;
-        -moz-transition: all 200ms ease-in-out;
-        -ms-transition: all 200ms ease-in-out;
-        border-radius: 0;
-        border-bottom: 1px solid #fff;
-    }
-    textarea {
-        padding: 16px;
-        margin-top: 0px;
-        height: 200px;
-    }
-    input:focus, textarea:focus {
-        outline: none;
-        border-bottom: 1px solid $shadow;
-        background-color:rgba(0, 0, 0, 0.4);
-    }
-    .form-icon {
-        position: absolute;
-        text-indent: 5px;
-        margin-top: 31px;
-        color: #FFF;
-        font-size: 26px;
-    }
-    .form-control {
-        text-indent: 30px;
-    }
-    .fa-comment-o {
-        margin-top: 9px;
-        font-size: 28px;
-    }
-    #message {
-        text-indent: 38px;
-    }
-    .message-placeholder {
-        margin-top: 15px;
-    }
+    // form {
+    //     margin: 40px auto;
+    //     font-size: 12pt;
+    // }
+    // input, textarea {
+    //     height: 50px;
+    //     background-color: transparent;
+    //     border-style: none;
+    //     padding: 25px;
+    //     margin-top: 20px;
+    //     color: #FFF;
+    //     transition: all 200ms ease-in-out;
+    //     -webkit-transition: all 200ms ease-in-out;
+    //     -moz-transition: all 200ms ease-in-out;
+    //     -ms-transition: all 200ms ease-in-out;
+    //     border-radius: 0;
+    //     border-bottom: 1px solid #fff;
+    // }
+    // textarea {
+    //     padding: 16px;
+    //     margin-top: 0px;
+    //     height: 200px;
+    // }
+    // input:focus, textarea:focus {
+    //     outline: none;
+    //     border-bottom: 1px solid $shadow;
+    //     background-color:rgba(0, 0, 0, 0.4);
+    // }
+    // .form-icon {
+    //     position: absolute;
+    //     text-indent: 5px;
+    //     margin-top: 31px;
+    //     color: #FFF;
+    //     font-size: 26px;
+    // }
+    // .form-control {
+    //     text-indent: 30px;
+    // }
+    // .fa-comment-o {
+    //     margin-top: 9px;
+    //     font-size: 28px;
+    // }
+    // #message {
+    //     text-indent: 38px;
+    // }
+    // .message-placeholder {
+    //     margin-top: 15px;
+    // }
     @media only screen and (max-width: 1200px) {
-        padding: 50px 20px 10px 20px;
+        padding: 60px 20px 20px 20px;
         .container {
             padding-top: 20px;
             text-align: left;

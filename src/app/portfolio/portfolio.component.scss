@@ -3,7 +3,7 @@
 #portfolio {
     background: #F4F4F4;
     #section-header {
-        padding: 100px 120px;
+        padding: 120px;
         .fa-heart {
             color: red;
         }
@@ -28,6 +28,9 @@
                     height: 100%;
                     -webkit-transition: all .15s ease-in-out;
                     transition: all .15s ease-in-out;
+                    transform: scale(1.01);
+                    -webkit-transform: scale(1.01);
+                    -ms-transform: scale(1.01);
                 }
                 figcaption {
                     color: #FFF;
@@ -50,9 +53,9 @@
                 }
             }
             figure:hover img, figure:focus img {
-                -webkit-transform: scale(1.1);
-                -ms-transform: scale(1.1);
-                transform: scale(1.1);
+                transform: scale(1.11);
+                -webkit-transform: scale(1.11);
+                -ms-transform: scale(1.11);
             }
             figure:hover figcaption, .container figure:focus figcaption {
                 opacity: 1;
@@ -62,7 +65,7 @@
     }
     @media only screen and (max-width: 1250px) {
         #section-header {
-            padding: 50px 20px;
+            padding: 60px 20px;
         }
         figcaption {
             font-weight: 400;

@@ -23,12 +23,12 @@ export class SkillsComponent implements OnInit {
         img: "assets/img/skills/html5.png"
       },
       {
-        name: "CSS/ SASS",
+        name: "CSS & SASS",
         img: "assets/img/skills/sass.png"
       },
       {
-        name: "JavaScript/ TypeScript",
-        img: "assets/img/skills/js.png"
+        name: "JavaScript & TypeScript",
+        img: "assets/img/skills/ts.png"
       },
       {
         name: "Angular",
@@ -47,18 +47,22 @@ export class SkillsComponent implements OnInit {
         img: "assets/img/skills/git.png"
       },
       {
-        name: "PhotoShop/ Illustrator/ InDesign",
-        img: "assets/img/skills/adobe.png"
+        name: "PhotoShop, Illustrator, & InDesign",
+        img: "assets/img/skills/ps.svg"
       },
       {
-        name: "Design & Usability",
+        name: "Responsive Design",
+        img: "assets/img/skills/responsive.png"
+      },
+      {
+        name: "User-Experience",
         img: "assets/img/skills/eye.png"
       }
     ];
 
     this.sortaSkills = [
       {
-        name: "Jasmine",
+        name: "Jasmine & Karma",
         img: "assets/img/skills/jasmine.svg"
       },
       {
@@ -68,11 +72,11 @@ export class SkillsComponent implements OnInit {
       {
         name: "Spanish",
         img: "assets/img/skills/mexico.png"
-      },
-      {
-        name: "Tennis",
-        img: "assets/img/skills/tennis.png"
       }
+      // {
+      //   name: "Tennis",
+      //   img: "assets/img/skills/tennis.png"
+      // }
     ];
 
     this.futureSkills = [

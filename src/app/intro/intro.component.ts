@@ -7,49 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroComponent implements OnInit {
   menuItems: Array<any>;
-  spaceTheme: boolean = true;
-  timeOfDay: any = 'afternoon';
+  greeting: any = 'Welcome';
 
   constructor() { }
 
   ngOnInit() {
-    this.loadMenuItems();
-    this.getTimeOfDay();
+    this.getTime();
   }
 
-  loadMenuItems() {
-    this.menuItems = [
-      {
-        label: "About Me",
-        icon: "user-o",
-        href: "#about"
-      },
-      {
-        label: "My Skills",
-        icon: "code",
-        href: "#skills"
-      },
-      {
-        label: "My Projects",
-        icon: "desktop",
-        href: "#portfolio"
-      },
-      {
-        label: "Contact Me",
-        icon: "envelope-open-o",
-        href: "#contact"
-      }
-    ]
-  }
-
-  getTimeOfDay() {
+  getTime() {
     let time = new Date().getHours();
-    if (time < 12) {
-      this.timeOfDay = 'Good morning';
+    if (time >= 23 || time <= 2) {
+      this.greeting = 'Sure is getting awfully late. Where ya headed?';
+    } else if (time < 6) {
+      this.greeting = 'You sure are up awfully early. Where to, cap?';
+    } else if (time < 12) {
+      this.greeting = 'Good morning. Where to, cap?';
     } else if (time < 17) {
-      this.timeOfDay = 'Good afternoon';
+      this.greeting = 'Good afternoon. Where to, cap?';
     } else {
-      this.timeOfDay = 'Good evening';
+      this.greeting = 'Good evening. Where to, cap?';
     }
   }
 }
