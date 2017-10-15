@@ -17,25 +17,25 @@ export class PortfolioComponent implements OnInit {
   loadProjects() {
     this.projects = [
       {
-        title: "Lighthouse Investments",
-        img: "http://drewdud.com/assets/img/portfolio/lhInvestments.png",
-        link: "http://targetallocation.com"
+        title: 'Lighthouse Investments',
+        img: 'http://drewdud.com/assets/img/portfolio/lhInvestments.png',
+        link: 'http://targetallocation.com'
       },
       {
-        title: "NightLight Branson",
-        img: "http://drewdud.com/assets/img/portfolio/office.jpg",
-        link: "http://drewdud.com/nl/"
+        title: 'NightLight Branson',
+        img: 'http://drewdud.com/assets/img/portfolio/office.jpg',
+        link: 'http://drewdud.com/nl/'
       },
       {
-        title: "Bolivar Chamber of Commerce",
-        img: "http://drewdud.com/assets/img/portfolio/bcoc.png",
-        link: "http://bolivarchamber.com"
+        title: 'Bolivar Chamber of Commerce',
+        img: 'http://drewdud.com/assets/img/portfolio/bcoc.png',
+        link: 'http://bolivarchamber.com'
       },
       {
-        title: "Shuffle Ninja",
-        img: "http://drewdud.com/assets/img/portfolio/ninja.png",
-        link: "http://drewdud.com/game/"
+        title: 'Shuffle Ninja',
+        img: 'http://drewdud.com/assets/img/portfolio/ninja.png',
+        link: 'http://drewdud.com/game/'
       }
-    ]
+    ];
   }
 }

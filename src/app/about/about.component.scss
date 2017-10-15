@@ -3,7 +3,7 @@
 #about {
     background: #F4F4F4;
     padding: 120px;
-    .container {
+    .container-fluid {
         width: 100%;
         .col-xl-2 {
             margin: auto;
@@ -51,6 +51,11 @@
         #satellite {
             width: 75px;
             top: 12px;
+        }
+    }
+    @media only screen and (max-width: 1140px) {
+        .about-img {
+            margin-bottom: 2.5em !important;
         }
     }
     @keyframes bobble {

@@ -27,7 +27,7 @@ fdescribe('ContactComponent', () => {
     it('should call loadLinks() method', () => {
       expect(component.ngOnInit).toBeDefined();
       component.ngOnInit();
-      spyOn(ContactComponent, 'ngOnInit').and.callThrough()
+      spyOn(ContactComponent, 'ngOnInit');
       expect(component.loadLinks).toHaveBeenCalled();
     });
   });

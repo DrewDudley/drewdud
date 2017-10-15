@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
   skills: Array<any>;
-  sortaSkills: Array<any>;
-  futureSkills: Array<any>;
+  learningSkills: Array<any>;
+  todoSkills: Array<any>;
 
   constructor() { }
 
@@ -19,86 +19,90 @@ export class SkillsComponent implements OnInit {
   loadSkills() {
     this.skills = [
       {
-        name: "HTML/ HTML5",
-        img: "assets/img/skills/html5.png"
+        name: 'HTML/ HTML5',
+        img: 'assets/img/skills/html5.png'
       },
       {
-        name: "CSS & SASS",
-        img: "assets/img/skills/sass.png"
+        name: 'CSS & SASS',
+        img: 'assets/img/skills/sass.png'
       },
       {
-        name: "JavaScript & TypeScript",
-        img: "assets/img/skills/ts.png"
+        name: 'JavaScript & TypeScript',
+        img: 'assets/img/skills/ts.png'
       },
       {
-        name: "Angular",
-        img: "assets/img/skills/angular.svg"
+        name: 'Angular',
+        img: 'assets/img/skills/angular.svg'
       },
       {
-        name: "Bootstrap",
-        img: "assets/img/skills/bootstrap.png"
+        name: 'Bootstrap',
+        img: 'assets/img/skills/bootstrap.png'
       },
       {
-        name: "WordPress",
-        img: "assets/img/skills/wordpress.png"
+        name: 'WordPress',
+        img: 'assets/img/skills/wordpress.png'
       },
       {
-        name: "Git",
-        img: "assets/img/skills/git.png"
+        name: 'Git',
+        img: 'assets/img/skills/git.png'
       },
       {
-        name: "PhotoShop, Illustrator, & InDesign",
-        img: "assets/img/skills/ps.svg"
+        name: 'PhotoShop, Illustrator, & InDesign',
+        img: 'assets/img/skills/ps.svg'
       },
       {
-        name: "Responsive Design",
-        img: "assets/img/skills/responsive.png"
+        name: 'Responsive Design',
+        img: 'assets/img/skills/responsive.png'
       },
       {
-        name: "User-Experience",
-        img: "assets/img/skills/eye.png"
+        name: 'User-Experience',
+        img: 'assets/img/skills/eye.png'
       }
     ];
 
-    this.sortaSkills = [
+    this.learningSkills = [
       {
-        name: "Jasmine & Karma",
-        img: "assets/img/skills/jasmine.svg"
+        name: 'Ionic',
+        img: 'assets/img/skills/ionic.png'
       },
       {
-        name: "Java",
-        img: "assets/img/skills/java.png"
+        name: 'Jasmine & Karma',
+        img: 'assets/img/skills/jasmine.svg'
       },
       {
-        name: "Spanish",
-        img: "assets/img/skills/mexico.png"
+        name: 'Jest',
+        img: 'assets/img/skills/jest.svg'
+      },
+      {
+        name: 'Java',
+        img: 'assets/img/skills/java.png'
+      },
+      {
+        name: 'Spanish',
+        img: 'assets/img/skills/mexico.png'
       }
       // {
-      //   name: "Tennis",
-      //   img: "assets/img/skills/tennis.png"
+      //   name: 'Tennis',
+      //   img: 'assets/img/skills/tennis.png'
       // }
     ];
 
-    this.futureSkills = [
+    this.todoSkills = [
       {
-        name: "React",
-        img: "assets/img/skills/react.png"
+        name: 'React',
+        img: 'assets/img/skills/react.png'
       },
       {
-        name: "Ionic",
-        img: "assets/img/skills/ionic.png"
+        name: 'SEO',
+        img: 'assets/img/skills/google.png'
       },
       {
-        name: "SEO",
-        img: "assets/img/skills/google.png"
+        name: 'German',
+        img: 'assets/img/skills/german.png'
       },
       {
-        name: "German",
-        img: "assets/img/skills/german.png"
-      },
-      {
-        name: "Backend",
-        img: "assets/img/skills/db.png"
+        name: 'Backend',
+        img: 'assets/img/skills/db.png'
       },
     ];
   }
