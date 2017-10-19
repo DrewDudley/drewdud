@@ -1,3 +1,4 @@
+// NG2
 import { Component, OnInit } from '@angular/core';
 
 @Component({

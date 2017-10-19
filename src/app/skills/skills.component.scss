@@ -14,11 +14,14 @@
         }
     }
     .col-lg-2 {
-        padding-bottom: 3.5em;
+        padding-bottom: 4em;
         text-align: center;
     }
+    .page-title {
+        padding-bottom: 1em;
+    }
     .page-title:not(:first-child) {
-        padding-top: 2.25em;
+        padding-top: 2.75em;
     }
     .skill-img {
         height: 3.3em;
@@ -31,6 +34,9 @@
         padding: 60px 20px 10px 20px;
         .skill-img {
             height: 3.75em;
+        }
+        .page-title {
+            padding-bottom: 0;
         }
     }
 }

@@ -1,8 +1,9 @@
+// NG2
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+// APP
 import { ContactComponent } from './contact.component';
 
-fdescribe('ContactComponent', () => {
+describe('ContactComponent', () => {
   let component: ContactComponent;
   let fixture: ComponentFixture<ContactComponent>;
 
@@ -23,12 +24,20 @@ fdescribe('ContactComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  describe('Method: ngOnInit()', () => {
-    it('should call loadLinks() method', () => {
+  describe('Function: ngOnInit()', () => {
+    it('should call loadLinks() function', () => {
       expect(component.ngOnInit).toBeDefined();
+      spyOn(component, 'loadLinks');
       component.ngOnInit();
-      spyOn(ContactComponent, 'ngOnInit');
       expect(component.loadLinks).toHaveBeenCalled();
+    });
+  });
+
+  describe('Function: loadLinks()', () => {
+    it('should contain 7 link objects in contactLinks array', () => {
+      expect(component.loadLinks).toBeDefined();
+      component.loadLinks();
+      expect(component.contactLinks.length).toEqual(7);
     });
   });
 });

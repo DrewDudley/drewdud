@@ -1,5 +1,6 @@
+// NG2
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+// APP
 import { PortfolioComponent } from './portfolio.component';
 
 describe('PortfolioComponent', () => {
