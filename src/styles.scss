@@ -11,23 +11,20 @@ $shadow: #474a6b;
 $moon: #E6E6E6;
 $mint: #34B3A0;
 $ionic: #4e8df7;
+$success: #00b300;
+$warning: #ff9900;
 
 body {
     margin: 0;
     font-family: "Avenir Next","Helvetica Neue",Helvetica,sans-serif;
     -webkit-font-smoothing: antialiased;
-    font-size: 16px;
+    font-size: 15px;
     color: $shadow;
     line-height: 2em;
     cursor: default;
 }
 .page-title {
-    font-size: 26px;
-}
-span {
-    font-family: "Avenir Next","Helvetica Neue",Helvetica,sans-serif;
-    -webkit-font-smoothing: antialiased;
-    color: $shadow;
+    font-size: 24px;
 }
 .draggable {
     cursor: grab;
@@ -49,7 +46,7 @@ span a {
         position: absolute;
         left: 0;
         bottom: 5px;
-        height: 1.5px;
+        height: 1.25px;
         width: 0;
     }
     span a:after {
@@ -58,7 +55,7 @@ span a {
         position: absolute;
         right: 0;
         bottom: 5px;
-        height: 1.5px;
+        height: 1.25px;
         width: 0;
         background: $ionic;
         transition: width .25s ease;

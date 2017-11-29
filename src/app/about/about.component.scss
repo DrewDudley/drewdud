@@ -2,7 +2,7 @@
 
 #about {
     background: #F4F4F4;
-    padding: 120px;
+    padding: 110px 120px;
     .container-fluid {
         width: 100%;
         .col-xl-2 {
@@ -14,8 +14,8 @@
             .about-img {
                 margin: auto 0 auto 0;
                 margin-left: -25px;
-                height: 14.25em;
-                width: 14.25em;
+                height: 15.25em;
+                width: 15.25em;
                 border-radius: 50%;
                 background: $ionic;
                 padding: 8px;
@@ -42,6 +42,7 @@
         width: 100px;
         animation: bobble 2500ms infinite ease-in-out;
         -webkit-animation: bobble 2500ms infinite ease-in-out;
+        
     }
     @media only screen and (max-width: 1250px) {
         padding: 60px 5px;

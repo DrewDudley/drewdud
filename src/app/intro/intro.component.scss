@@ -25,7 +25,7 @@
             color: $shadow;
         }
         #menu-header {
-            font-size: 18px;
+            font-size: 16px;
             padding: 1em 15px 0 15px;
             color: white;
             animation: fadeDown .25s ease-in both;
@@ -68,7 +68,7 @@
                     text-decoration: none;
                 }
                 a:hover, a:focus {
-                    background: rgba(0,0,0,.2);
+                    background: rgba(0,0,0,.15);
                     box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .19);
                 }
             }
@@ -125,6 +125,7 @@
         -webkit-animation: rotating 90s linear infinite;
         -moz-animation: rotating 90s linear infinite;
         -ms-animation: rotating 90s linear infinite;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.19);
         .crater {
             background-color: darken($moon, 15%);
             border-radius: 50%;
@@ -200,6 +201,7 @@
         -webkit-animation: rotating 50s linear infinite;
         -moz-animation: rotating 50s linear infinite;
         -ms-animation: rotating 50s linear infinite;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.19);
         .mars-crater {
             background-color: darken($mars, 10%);
             border-radius: 50%;
