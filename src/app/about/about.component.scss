@@ -14,8 +14,8 @@
             .about-img {
                 margin: auto 0 auto 0;
                 margin-left: -25px;
-                height: 15.25em;
-                width: 15.25em;
+                height: 16em;
+                width: 16em;
                 border-radius: 50%;
                 background: $ionic;
                 padding: 8px;
@@ -25,9 +25,10 @@
             }
         }
         .col-xl-2:hover .about-img {
-            transform: rotateY(180deg);
-            -webkit-transform: rotateY(180deg);
-            background: $mint;
+            // transform: rotateY(180deg);
+            // -webkit-transform: rotateY(180deg);
+            // background: $mint;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.23), 0 6px 25px rgba(0, 0, 0, 0.19);
         }
         .col-xl-9 {
             display: flex;

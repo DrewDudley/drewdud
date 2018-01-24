@@ -12,14 +12,14 @@
           {{ skill.name }}
         </span>
         <div class="progress">
-          <div class="progress-bar" [ngStyle]="{'width.%': skill.prof}">{{ skill.prof }}% proficiency</div>
+          <div class="progress-bar progress-bar-striped" [ngStyle]="{'width.%': skill.prof}">{{ skill.prof }}%</div>
         </div>
       </div>
     </div>
   </div>
   <hr>
   <p class=page-title>
-    These are some things I'm learning...
+    These are some things that I'm learning...
   </p>
   <div class="container-fluid">
     <div class="row">
@@ -31,7 +31,7 @@
           {{ learningSkill.name }}
         </span>
         <div class="progress">
-          <div class="progress-bar" [ngClass]="{learning: learningSkill.prof < 70}" [ngStyle]="{'width.%': learningSkill.prof}">{{ learningSkill.prof }}% proficiency</div>
+          <div class="progress-bar progress-bar-striped" [ngClass]="{learning: learningSkill.prof < 70}" [ngStyle]="{'width.%': learningSkill.prof}">{{ learningSkill.prof }}%</div>
         </div>
       </div>
     </div>

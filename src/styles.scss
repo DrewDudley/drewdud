@@ -12,7 +12,7 @@ $moon: #E6E6E6;
 $mint: #34B3A0;
 $ionic: #4e8df7;
 $success: #00b300;
-$warning: #ff9900;
+$warning: #e0a903;
 
 body {
     margin: 0;
@@ -21,7 +21,6 @@ body {
     font-size: 15px;
     color: $shadow;
     line-height: 2em;
-    cursor: default;
 }
 .page-title {
     font-size: 24px;
@@ -39,7 +38,7 @@ span a {
     color: $ionic;
 }
 @media only screen and (min-width: 1250px) {
-    // Sliding underline effect
+    // Sliding underline effect, only on larger screens
     span a:before {
         content: '';
         display: block;
@@ -58,12 +57,12 @@ span a {
         height: 1.25px;
         width: 0;
         background: $ionic;
-        transition: width .25s ease;
+        transition: width .18s ease;
     }
     span a:hover:before {
         width: 100%;
         background: $ionic;
-        transition: width .25s ease;
+        transition: width .18s ease;
     }
     span a:hover:after {
         width: 100%;

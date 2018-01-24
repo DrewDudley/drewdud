@@ -20,27 +20,27 @@ export class SkillsComponent implements OnInit {
   loadSkills() {
     this.skills = [
       {
-        name: 'HTML/ HTML5',
+        name: 'HTML/ HTML5*',
         img: 'assets/img/skills/html5.png',
         prof: 95
       },
       {
-        name: 'CSS & SASS',
+        name: 'CSS/ SASS*',
         img: 'assets/img/skills/sass.png',
         prof: 95
       },
       {
-        name: 'JavaScript & TypeScript',
+        name: 'JavaScript/ TypeScript*',
         img: 'assets/img/skills/ts.png',
         prof: 75
       },
       {
-        name: 'Angular 2+',
+        name: 'Angular*',
         img: 'assets/img/skills/angular.svg',
-        prof: 70
+        prof: 75
       },
       {
-        name: 'Bootstrap',
+        name: 'Bootstrap*',
         img: 'assets/img/skills/bootstrap.png',
         prof: 90
       },
@@ -50,9 +50,9 @@ export class SkillsComponent implements OnInit {
         prof: 75
       },
       {
-        name: 'Git',
+        name: 'Git*',
         img: 'assets/img/skills/git.png',
-        prof: 75
+        prof: 80
       },
       {
         name: 'Adobe Suite',
@@ -60,12 +60,12 @@ export class SkillsComponent implements OnInit {
         prof: 70
       },
       {
-        name: 'Responsive Design',
+        name: 'Responsive Design*',
         img: 'assets/img/skills/responsive.png',
         prof: 95
       },
       {
-        name: 'User-Experience',
+        name: 'User-Experience*',
         img: 'assets/img/skills/eye.png',
         prof: 90
       }
@@ -75,17 +75,17 @@ export class SkillsComponent implements OnInit {
       {
         name: 'Ionic',
         img: 'assets/img/skills/ionic.png',
-        prof: 60
+        prof: 65
       },
       {
-        name: 'Jasmine & Karma',
+        name: 'Jasmine & Karma*',
         img: 'assets/img/skills/jasmine.svg',
-        prof: 60
+        prof: 65
       },
       {
         name: 'Jest',
         img: 'assets/img/skills/jest.svg',
-        prof: 60
+        prof: 65
       },
       {
         name: 'Java',
@@ -93,9 +93,9 @@ export class SkillsComponent implements OnInit {
         prof: 50
       },
       {
-        name: 'Google Analytics',
+        name: 'Google Analytics*',
         img: 'assets/img/skills/analytics.png',
-        prof: 55
+        prof: 60
       },
       {
         name: 'Spanish',

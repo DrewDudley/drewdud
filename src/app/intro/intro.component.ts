@@ -19,9 +19,9 @@ export class IntroComponent implements OnInit {
   getTime() {
     const time = new Date().getHours();
     if (time >= 23 || time <= 2) {
-      this.greeting = 'Sure is getting awfully late. Where ya headed?';
+      this.greeting = 'Welcome. Where ya headed so late?';
     } else if (time < 6) {
-      this.greeting = 'You sure are up awfully early. Where to, cap?';
+      this.greeting = 'Sure is awfully early. Where to, cap?';
     } else if (time < 12) {
       this.greeting = 'Good morning. Where to, cap?';
     } else if (time < 17) {

@@ -2,7 +2,7 @@
 
 #contact {
     height: 100%;
-    padding: 110px 120px;
+    padding: 110px 120px 25px 120px;
     background: radial-gradient(circle at top, $dark 0%, $darkest 100%);
     color: #FFF;
     span {
@@ -12,7 +12,7 @@
         text-align: center;
     }
     .col-xl-1 {
-        padding-top: 75px;
+        padding-top: 100px;
         text-align: center;
         i {
             font-size: 1.4em;
@@ -20,11 +20,18 @@
             transition: all 200ms ease-in-out;
             -webkit-transition: all 200ms ease-in-out;
             -moz-transition: all 200ms ease-in-out;
-            -ms-transition: all 200ms ease-in-out;
         }
         i:hover {
             text-shadow: 0px 0px 25px #FFF;
         }
+    }
+    hr {
+        background-color: $shadow;
+        margin-top: 100px;
+    }
+    footer {
+        text-align: center;
+        margin-top: 25px;
     }
     // form {
     //     margin: 40px auto;
@@ -39,7 +46,6 @@
     //         transition: all 200ms ease-in-out;
     //         -webkit-transition: all 200ms ease-in-out;
     //         -moz-transition: all 200ms ease-in-out;
-    //         -ms-transition: all 200ms ease-in-out;
     //         border-radius: 0;
     //         border-bottom: 1px solid #fff;
     //     }
@@ -96,7 +102,13 @@
             text-align: left;
         }
         .col-xl-1:not(:last-child) {
-            border-bottom: 1px dotted #FFF;
+            border-bottom: 1px solid $shadow;
+        }
+        hr {
+            margin-top: -10px;
+        }
+        footer {
+            margin-top: 0px;
         }
     }
 }

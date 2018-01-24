@@ -15,7 +15,7 @@
         animation: fadeIn .25s ease-in both;
         -webkit-animation: fadeIn .25s ease-in both;
         -moz-animation: fadeIn .25s ease-in both;
-        animation-delay: 750ms;
+        animation-delay: 1s;
         h2 {
             color: #fff;
             font-size: 28px;
@@ -31,15 +31,11 @@
             animation: fadeDown .25s ease-in both;
             -webkit-animation: fadeDown .25s ease-in both;
             -moz-animation: fadeDown .25s ease-in both;
-            animation-delay: 2.25s;
+            animation-delay: 2.5s;
         }
     }
     .overlay {
         padding-top: .5em;
-        nav {
-            position: relative;
-            text-align: center;
-        }
         ul {
             display: inline-block;
             margin: 0 7px;
@@ -55,6 +51,7 @@
                     font-size: 30px;
                 }
                 a {
+                    border-radius: 4px;
                     display: block;
                     padding: 20px 0;
                     min-width: 100px;
@@ -84,31 +81,26 @@
                 animation: fadeDown .25s ease-in both;
                 -webkit-animation: fadeDown .25s ease-in both;
                 -moz-animation: fadeDown .25s ease-in both;
-                -ms-animation: fadeDown .25s ease-in both;
             }
             ul:first-child li:first-child {
-                animation-delay: 3.5s;
-                -webkit-animation-delay: 3.5s;
-                -moz-animation-delay: 3.5s;
-                -ms-animation-delay: 3.5s;
-            }
-            ul:first-child li:nth-child(2) {
                 animation-delay: 3.75s;
                 -webkit-animation-delay: 3.75s;
                 -moz-animation-delay: 3.75s;
-                -ms-animation-delay: 3.75s;
             }
-            ul:nth-child(2) li:first-child {
+            ul:first-child li:nth-child(2) {
                 animation-delay: 4s;
                 -webkit-animation-delay: 4s;
                 -moz-animation-delay: 4s;
-                -ms-animation-delay: 4s;
             }
-            ul:nth-child(2) li:nth-child(2) {
+            ul:nth-child(2) li:first-child {
                 animation-delay: 4.25s;
                 -webkit-animation-delay: 4.25s;
                 -moz-animation-delay: 4.25s;
-                -ms-animation-delay: 4.25s;
+            }
+            ul:nth-child(2) li:nth-child(2) {
+                animation-delay: 4.5s;
+                -webkit-animation-delay: 4.5s;
+                -moz-animation-delay: 4.5s;
             }
         }
     }
@@ -124,7 +116,6 @@
         animation: rotating 90s linear infinite;
         -webkit-animation: rotating 90s linear infinite;
         -moz-animation: rotating 90s linear infinite;
-        -ms-animation: rotating 90s linear infinite;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.19);
         .crater {
             background-color: darken($moon, 15%);
@@ -165,7 +156,6 @@
             animation: flag-pole 11s cubic-bezier(.645, .045, .355, 1);
             -webkit-animation: flag-pole 11s cubic-bezier(.645, .045, .355, 1);
             -moz-animation: flag-pole 11s cubic-bezier(.645, .045, .355, 1);
-            -ms-animation: flag-pole 11s cubic-bezier(.645, .045, .355, 1);
             &:before {
                 content: "";
                 position: absolute;
@@ -184,7 +174,6 @@
                 animation: flag-unfurl 11s cubic-bezier(.645, .045, .355, 1);
                 -webkit-animation: flag-unfurl 11s cubic-bezier(.645, .045, .355, 1);
                 -moz-animation: flag-unfurl 11s cubic-bezier(.645, .045, .355, 1);
-                -ms-animation: flag-unfurl 11s cubic-bezier(.645, .045, .355, 1);
             }
         }
     }
@@ -200,7 +189,6 @@
         animation: rotating 50s linear infinite;
         -webkit-animation: rotating 50s linear infinite;
         -moz-animation: rotating 50s linear infinite;
-        -ms-animation: rotating 50s linear infinite;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.19);
         .mars-crater {
             background-color: darken($mars, 10%);
