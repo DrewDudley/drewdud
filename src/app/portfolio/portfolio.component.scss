@@ -44,8 +44,11 @@
                     opacity: 0;
                     transition: all .15s ease-in-out;
                     -webkit-transition: all .15s ease-in-out;
+                    .title {
+                        margin-top: -8px;
+                    }
                     i {
-                        font-size: 2em;
+                        font-size: 2.25em;
                         color: $ionic;
                     }
                     .title, i {

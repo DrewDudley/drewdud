@@ -18,37 +18,37 @@ export class ContactComponent implements OnInit {
   loadLinks() {
     this.contactLinks = [
       {
-        icon: 'facebook',
+        icon: 'fab fa-facebook-f',
         href: 'https://www.facebook.com/drew.dudley.161/',
         class: 'skill-link'
       },
       {
-        icon: 'twitter',
+        icon: 'fab fa-twitter',
         href: 'https://twitter.com/drewdudleyyy/',
         class: 'skill-link'
       },
       {
-        icon: 'instagram',
+        icon: 'fab fa-instagram',
         href: 'https://www.instagram.com/drewdudleyyy/',
         class: 'skill-link'
       },
       {
-        icon: 'linkedin',
+        icon: 'fab fa-linkedin-in',
         href: 'https://www.linkedin.com/in/drewdudley/',
         class: 'skill-link'
       },
       {
-        icon: 'github',
+        icon: 'fab fa-github',
         href: 'https://github.com/DrewDudley/',
         class: 'skill-link'
       },
       {
-        icon: 'envelope-o',
+        icon: 'far fa-envelope',
         href: 'mailto:drewdudley93@gmail.com',
         class: 'skill-link'
       },
       {
-        icon: 'angle-up',
+        icon: 'fas fa-chevron-up',
         href: '#intro',
         class: 'link'
       }

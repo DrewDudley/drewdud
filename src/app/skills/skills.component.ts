@@ -32,12 +32,12 @@ export class SkillsComponent implements OnInit {
       {
         name: 'JavaScript/ TypeScript*',
         img: 'assets/img/skills/ts.png',
-        prof: 75
+        prof: 80
       },
       {
         name: 'Angular*',
         img: 'assets/img/skills/angular.svg',
-        prof: 75
+        prof: 80
       },
       {
         name: 'Bootstrap*',
@@ -47,7 +47,7 @@ export class SkillsComponent implements OnInit {
       {
         name: 'WordPress',
         img: 'assets/img/skills/wordpress.png',
-        prof: 75
+        prof: 80
       },
       {
         name: 'Git*',
@@ -57,7 +57,7 @@ export class SkillsComponent implements OnInit {
       {
         name: 'Adobe Suite',
         img: 'assets/img/skills/ps.svg',
-        prof: 70
+        prof: 80
       },
       {
         name: 'Responsive Design*',
@@ -75,22 +75,22 @@ export class SkillsComponent implements OnInit {
       {
         name: 'Ionic',
         img: 'assets/img/skills/ionic.png',
-        prof: 65
+        prof: 75
       },
       {
         name: 'Jasmine & Karma*',
         img: 'assets/img/skills/jasmine.svg',
-        prof: 65
+        prof: 70
       },
       {
         name: 'Jest',
         img: 'assets/img/skills/jest.svg',
-        prof: 65
+        prof: 70
       },
       {
         name: 'Java',
         img: 'assets/img/skills/java.png',
-        prof: 50
+        prof: 55
       },
       {
         name: 'Google Analytics*',
@@ -110,8 +110,8 @@ export class SkillsComponent implements OnInit {
         img: 'assets/img/skills/react.png'
       },
       {
-        name: 'SQL',
-        img: 'assets/img/skills/db.png'
+        name: 'Vue.js',
+        img: 'assets/img/skills/vuejs.png'
       },
       {
         name: 'SEO',

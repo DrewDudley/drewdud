@@ -24,16 +24,13 @@
                 -webkit-transition: all .25s ease-in-out;
             }
         }
-        .col-xl-2:hover .about-img {
-            // transform: rotateY(180deg);
-            // -webkit-transform: rotateY(180deg);
-            // background: $mint;
-            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.23), 0 6px 25px rgba(0, 0, 0, 0.19);
-        }
         .col-xl-9 {
             display: flex;
             justify-content: center;
             flex-direction: column;
+        }
+        .row:hover .about-img {
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.23), 0 6px 25px rgba(0, 0, 0, 0.19);
         }
     }
     #satellite {
