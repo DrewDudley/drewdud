@@ -20,8 +20,8 @@
                 background: $ionic;
                 padding: 8px;
                 box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.19);
-                transition: all .25s ease-in-out;
-                -webkit-transition: all .25s ease-in-out;
+                transition: all .2s ease-in-out;
+                -webkit-transition: all .2s ease-in-out;
             }
         }
         .col-xl-9 {
@@ -31,6 +31,8 @@
         }
         .row:hover .about-img {
             box-shadow: 0 6px 25px rgba(0, 0, 0, 0.23), 0 6px 25px rgba(0, 0, 0, 0.19);
+            -webkit-transform: translateY(-1.5px);
+            transform: translateY(-1.5px);
         }
     }
     #satellite {

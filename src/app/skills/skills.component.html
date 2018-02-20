@@ -1,55 +1,55 @@
 <div id="skills">
-  <p class=page-title>
-    These are a handful of my skills...
-  </p>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-4 col-lg-2" *ngFor="let skill of skills">
-        <h4>
-          <img src="{{ skill.img }}" class="skill-img" draggable="false" *ngIf="skill.img">
-        </h4>
-        <span>
-          {{ skill.name }}
-        </span>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped" [ngStyle]="{'width.%': skill.prof}">{{ skill.prof }}%</div>
+    <p class=page-title>
+        These are a handful of my skills...
+    </p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 col-lg-2" *ngFor="let skill of skills">
+                <h4>
+                    <img src="{{ skill.img }}" class="skill-img" draggable="false" *ngIf="skill.img">
+                </h4>
+                <span>
+                    {{ skill.name }}
+                </span>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" [ngStyle]="{'width.%': skill.prof}">{{ skill.prof }}%</div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <hr>
-  <p class=page-title>
-    These are some things that I'm learning...
-  </p>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-4 col-lg-2" *ngFor="let learningSkill of learningSkills">
-        <h4>
-          <img src="{{ learningSkill.img }}" class="skill-img" draggable="false" *ngIf="learningSkill.img">
-        </h4>
-        <span>
-          {{ learningSkill.name }}
-        </span>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped" [ngClass]="{learning: learningSkill.prof < 80}" [ngStyle]="{'width.%': learningSkill.prof}">{{ learningSkill.prof }}%</div>
+    <hr>
+    <p class=page-title>
+        These are some things that I'm learning...
+    </p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 col-lg-2" *ngFor="let learningSkill of learningSkills">
+                <h4>
+                    <img src="{{ learningSkill.img }}" class="skill-img" draggable="false" *ngIf="learningSkill.img">
+                </h4>
+                <span>
+                    {{ learningSkill.name }}
+                </span>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" [ngClass]="{learning: learningSkill.prof < 80}" [ngStyle]="{'width.%': learningSkill.prof}">{{ learningSkill.prof }}%</div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <hr>
-  <p class=page-title>
-    And here's my TODO list...
-  </p>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-4 col-lg-2" *ngFor="let todoSkill of todoSkills">
-        <h4>
-          <img src="{{ todoSkill.img }}" class="skill-img" draggable="false" *ngIf="todoSkill.img">
-        </h4>
-        <span>
-          {{ todoSkill.name }}
-        </span>
-      </div>
+    <hr>
+    <p class=page-title>
+        And here's my TODO list...
+    </p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 col-lg-2" *ngFor="let todoSkill of todoSkills">
+                <h4>
+                    <img src="{{ todoSkill.img }}" class="skill-img" draggable="false" *ngIf="todoSkill.img">
+                </h4>
+                <span>
+                    {{ todoSkill.name }}
+                </span>
+            </div>
+        </div>
     </div>
-  </div>
 </div>

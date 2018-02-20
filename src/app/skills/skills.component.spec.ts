@@ -1,49 +1,49 @@
-// NG2
+// NG
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 // APP
 import { SkillsComponent } from './skills.component';
 
 describe('SkillsComponent', () => {
-  let component: SkillsComponent;
-  let fixture: ComponentFixture<SkillsComponent>;
+    let component: SkillsComponent;
+    let fixture: ComponentFixture<SkillsComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ SkillsComponent ]
-    })
-    .compileComponents();
-  }));
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+            declarations: [ SkillsComponent ]
+        })
+        .compileComponents();
+    }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(SkillsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-
-  describe('Function: ngOnInit()', () => {
-    it('should call loadSkills function', () => {
-      spyOn(component, 'loadSkills');
-      component.ngOnInit();
-      expect(component.loadSkills).toHaveBeenCalled();
+    beforeEach(() => {
+        fixture = TestBed.createComponent(SkillsComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
     });
-  });
 
-  describe('Function: loadSkills()', () => {
-    it('should contain 10 objects in skills array ', () => {
-      component.loadSkills();
-      expect(component.skills.length).toEqual(10);
+    it('should create', () => {
+        expect(component).toBeTruthy();
     });
-    it('should contain 5 objects in learningSkills array ', () => {
-      component.loadSkills();
-      expect(component.learningSkills.length).toEqual(5);
+
+    describe('Function: ngOnInit()', () => {
+        it('should call loadSkills function', () => {
+            spyOn(component, 'loadSkills');
+            component.ngOnInit();
+            expect(component.loadSkills).toHaveBeenCalled();
+        });
     });
-    it('should contain 4 objects in todoSkills array ', () => {
-      component.loadSkills();
-      expect(component.todoSkills.length).toEqual(4);
+
+    describe('Function: loadSkills()', () => {
+        it('should contain 10 objects in skills array ', () => {
+            component.loadSkills();
+            expect(component.skills.length).toEqual(10);
+        });
+        it('should contain 5 objects in learningSkills array ', () => {
+            component.loadSkills();
+            expect(component.learningSkills.length).toEqual(5);
+        });
+        it('should contain 4 objects in todoSkills array ', () => {
+            component.loadSkills();
+            expect(component.todoSkills.length).toEqual(4);
+        });
     });
-  });
 });
