@@ -1,4 +1,4 @@
-// NG2
+// NG
 import { TestBed, async } from '@angular/core/testing';
 // APP
 import { AppComponent } from './app.component';

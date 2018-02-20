@@ -37,9 +37,9 @@ describe('SkillsComponent', () => {
             component.loadSkills();
             expect(component.skills.length).toEqual(10);
         });
-        it('should contain 5 objects in learningSkills array ', () => {
+        it('should contain 6 objects in learningSkills array ', () => {
             component.loadSkills();
-            expect(component.learningSkills.length).toEqual(5);
+            expect(component.learningSkills.length).toEqual(6);
         });
         it('should contain 4 objects in todoSkills array ', () => {
             component.loadSkills();

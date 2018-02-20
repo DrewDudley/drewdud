@@ -1,4 +1,4 @@
-// NG2
+// NG
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -12,20 +12,20 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    IntroComponent,
-    AboutComponent,
-    SkillsComponent,
-    PortfolioComponent,
-    ContactComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        IntroComponent,
+        AboutComponent,
+        SkillsComponent,
+        PortfolioComponent,
+        ContactComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

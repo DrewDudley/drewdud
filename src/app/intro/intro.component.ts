@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./intro.component.scss']
 })
 export class IntroComponent implements OnInit {
-    menuItems: Array<any>;
-    greeting: any = 'Welcome';
+    greeting: any = 'Welcome. Where to cap?';
 
     constructor() { }
 
@@ -18,7 +17,7 @@ export class IntroComponent implements OnInit {
 
     getTime() {
         const time = new Date().getHours();
-        if (time >= 23 || time <= 2) {
+        if (time > 23 || time < 3) {
             this.greeting = 'Welcome. Where ya headed so late?';
         } else if (time < 6) {
             this.greeting = 'Sure is awfully early. Where to, cap?';
