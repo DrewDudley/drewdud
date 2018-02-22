@@ -1,7 +1,6 @@
 @import "../app.component.scss";
 
 #intro {
-    height: 100%;
     min-height: 100vh;
     padding: 50px 20px;
     background: radial-gradient(circle at bottom, $dark 0%, $darker 100%);
@@ -10,14 +9,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
     #intro-text {
         text-align: center;
         animation: fadeIn .25s ease-in both;
         -webkit-animation: fadeIn .25s ease-in both;
-        -moz-animation: fadeIn .25s ease-in both;
         animation-delay: 1s;
         h2 {
-            color: #fff;
             font-size: 28px;
         }
         .page-title {
@@ -27,81 +25,70 @@
         #menu-header {
             font-size: 16px;
             padding: 1em 15px 0 15px;
-            color: white;
             animation: fadeDown .25s ease-in both;
             -webkit-animation: fadeDown .25s ease-in both;
-            -moz-animation: fadeDown .25s ease-in both;
             animation-delay: 2.5s;
         }
-    }
-    .overlay {
-        padding-top: .5em;
-        ul {
-            display: inline-block;
-            margin: 0 7px;
-            padding: 0;
-            list-style: none;
-            margin-bottom: -1em;
-            li {
-                float: left;
-                margin-right: 20px;
-                i {
-                    display: block;
-                    font-size: 34px;
+        .overlay {
+            padding-top: .5em;
+            nav {
+                ul {
+                    display: inline-block;
+                    margin: 0 8px;
+                    padding: 0;
+                    list-style: none;
+                    margin-bottom: -1em;
+                    li {
+                        float: left;
+                        margin-right: 20px;
+                        animation: fadeDown .25s ease-in both;
+                        -webkit-animation: fadeDown .25s ease-in both;
+                        i {
+                            display: block;
+                            font-size: 34px;
+                        }
+                        a {
+                            border-radius: 4px;
+                            display: block;
+                            padding: 18px 0;
+                            min-width: 100px;
+                            height: 90px;
+                            background: rgba(0,0,0,.38);
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-size: 11px;
+                            transition: all .2s ease-in-out;
+                            -webkit-transition: all .2s ease-in-out;
+                            text-decoration: none;
+                        }
+                        a:hover, a:focus {
+                            background: rgba(0,0,0,.15);
+                            box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .19);
+                            transform: translateY(-1px);
+                            -webkit-transform: translateY(-1px);
+                        }
+                    }
+                    li:last-child {
+                        margin-right: 0;
+                        padding-right: 0;
+                    }
                 }
-                a {
-                    border-radius: 4px;
-                    display: block;
-                    padding: 18px 0;
-                    min-width: 100px;
-                    height: 90px;
-                    background: rgba(0,0,0,.38);
-                    color: #fff;
-                    text-transform: uppercase;
-                    font-size: 11px;
-                    transition: all .2s ease-in-out;
-                    -webkit-transition: all .2s ease-in-out;
-                    text-decoration: none;
+                ul:first-child li:first-child {
+                    animation-delay: 3.75s;
+                    -webkit-animation-delay: 3.75s;
                 }
-                a:hover, a:focus {
-                    background: rgba(0,0,0,.15);
-                    box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .19);
-                    transform: translateY(-1px);
-                    -webkit-transform: translateY(-1px);
+                ul:first-child li:nth-child(2) {
+                    animation-delay: 4s;
+                    -webkit-animation-delay: 4s;
                 }
-            }
-        }
-    }
-    .overlay ul li:last-child {
-        margin-right: 0;
-        padding-right: 0;
-    }
-    .overlay-boxify {
-        nav {
-            ul li {
-                animation: fadeDown .25s ease-in both;
-                -webkit-animation: fadeDown .25s ease-in both;
-                -moz-animation: fadeDown .25s ease-in both;
-            }
-            ul:first-child li:first-child {
-                animation-delay: 3.75s;
-                -webkit-animation-delay: 3.75s;
-                -moz-animation-delay: 3.75s;
-            }
-            ul:first-child li:nth-child(2) {
-                animation-delay: 4s;
-                -webkit-animation-delay: 4s;
-                -moz-animation-delay: 4s;
-            }
-            ul:nth-child(2) li:first-child {
-                animation-delay: 4.25s;
-                -webkit-animation-delay: 4.25s;
-                -moz-animation-delay: 4.25s;
-            }
-            ul:nth-child(2) li:nth-child(2) {
-                animation-delay: 4.5s;
-                -webkit-animation-delay: 4.5s;
-                -moz-animation-delay: 4.5s;
+                ul:nth-child(2) li:first-child {
+                    animation-delay: 4.25s;
+                    -webkit-animation-delay: 4.25s;
+                }
+                ul:nth-child(2) li:nth-child(2) {
+                    animation-delay: 4.5s;
+                    -webkit-animation-delay: 4.5s;
+                }
             }
         }
     }
@@ -116,7 +103,6 @@
         border-radius: 50%;
         animation: rotating 90s linear infinite;
         -webkit-animation: rotating 90s linear infinite;
-        -moz-animation: rotating 90s linear infinite;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.19);
         .crater {
             background-color: darken($moon, 15%);
@@ -156,7 +142,6 @@
             left: 100px;
             animation: flag-pole 11s cubic-bezier(.645, .045, .355, 1);
             -webkit-animation: flag-pole 11s cubic-bezier(.645, .045, .355, 1);
-            -moz-animation: flag-pole 11s cubic-bezier(.645, .045, .355, 1);
             &:before {
                 content: "";
                 position: absolute;
@@ -174,7 +159,6 @@
                 background: $ionic;
                 animation: flag-unfurl 11s cubic-bezier(.645, .045, .355, 1);
                 -webkit-animation: flag-unfurl 11s cubic-bezier(.645, .045, .355, 1);
-                -moz-animation: flag-unfurl 11s cubic-bezier(.645, .045, .355, 1);
             }
         }
     }
@@ -189,7 +173,6 @@
         border-radius: 50%;
         animation: rotating 50s linear infinite;
         -webkit-animation: rotating 50s linear infinite;
-        -moz-animation: rotating 50s linear infinite;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.19);
         .mars-crater {
             background-color: darken($mars, 10%);
@@ -210,7 +193,6 @@
             width: 45px;
         }
     }
-    // Functions
     @keyframes fadeDown {
         from {
             opacity: 0;
@@ -282,17 +264,19 @@
                 font-size: 1em;
                 padding-top: 0 !important;
             }
-        }
-        .overlay {
-            ul {
-                li {
-                    a {
-                        padding: 22px 0;
-                        min-width: 105px;
-                        height: 95px;
-                        font-size: 10px;
-                        margin-bottom: 20px;
-                        background: rgba(0,0,0,.7);
+            .overlay {
+                nav {
+                    ul {
+                        li {
+                            a {
+                                padding: 22px 0;
+                                min-width: 105px;
+                                height: 95px;
+                                font-size: 10px;
+                                margin-bottom: 20px;
+                                background: rgba(0,0,0,.7);
+                            }
+                        }
                     }
                 }
             }

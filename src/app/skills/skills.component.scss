@@ -1,10 +1,9 @@
 @import "../app.component.scss";
 
 #skills {
-    padding: 110px 120px;
-    padding-bottom: 60px;
+    padding: 110px 120px 60px 120px;
     background: radial-gradient(circle at center, $dark 0%, $darker 100%);
-    color: #FFF;
+    color: #fff;
     .page-title {
         padding-bottom: 1em;
     }
