@@ -3,7 +3,7 @@
 #skills {
     padding: 110px 120px 60px 120px;
     background: radial-gradient(circle at center, $dark 0%, $darker 100%);
-    color: #fff;
+    color: #FFF;
     .page-title {
         padding-bottom: 1em;
     }
@@ -26,7 +26,7 @@
                 margin-bottom: .25em;
             }
             .progress {
-                margin: 2em auto 0 auto;
+                margin: 2em auto 1.5em auto;
                 width: 80%;
                 .progress-bar {
                     background-color: $success;
@@ -42,7 +42,7 @@
         background-color: $shadow;
     }
     @media only screen and (max-width: 1250px) {
-        padding: 60px 20px 10px 20px;
+        padding: 70px 20px 10px 20px;
         .skill-img {
             height: 3.75em;
         }

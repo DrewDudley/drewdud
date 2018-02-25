@@ -1,44 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Drew Dudley | UI Developer</title>
-    <base href="/">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta name="keywords" content="drew, dudley, drew dudley, drew dud, drew j dudley, ui, ux, ui ux, developer, freelance, freelancer, web, web design, web designer, design, designer, angular2, space">
-    <meta name="description" content="My name's Drew. I like to code.">
-    <meta name="author" content="Drew Dudley">
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
-  <body>
-    <app-root></app-root>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('.link').on('click', function(event) {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({scrollTop: $(hash).offset().top}, 500);
-        });
-      })
-    </script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script>
-      $(function() {
-        $( ".draggable" ).draggable({containment: "body", scroll: false});
-      });
-    </script>
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <head>
+        <title>Drew Dudley | UI Developer</title>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="keywords" content="drew, dudley, drew dudley, drew dud, drew j dudley, ui, ux, developer, design, designer, portfolio, freelance, freelancer, web, angular2, angular5, space">
+        <meta name="description" content="My name's Drew. I like to code.">
+        <meta name="author" content="Drew Dudley">
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <app-root></app-root>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.link').on('click', function(event) {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({scrollTop: $(hash).offset().top}, 500);
+                });
+            })
+        </script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script>
+            $(function() {
+              $( ".draggable" ).draggable({containment: "body", scroll: false});
+            });
+        </script>
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-103575246-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-  </body>
+            ga('create', 'UA-103575246-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
 </html>
