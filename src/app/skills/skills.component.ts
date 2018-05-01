@@ -40,6 +40,11 @@ export class SkillsComponent implements OnInit {
                 prof: 80
             },
             {
+                name: 'Ionic',
+                img: 'assets/img/skills/ionic.png',
+                prof: 85
+            },
+            {
                 name: 'Bootstrap*',
                 img: 'assets/img/skills/bootstrap.png',
                 prof: 90
@@ -73,11 +78,6 @@ export class SkillsComponent implements OnInit {
 
         this.learningSkills = [
             {
-                name: 'Ionic',
-                img: 'assets/img/skills/ionic.png',
-                prof: 75
-            },
-            {
                 name: 'Jasmine & Karma*',
                 img: 'assets/img/skills/jasmine.svg',
                 prof: 70
@@ -95,7 +95,7 @@ export class SkillsComponent implements OnInit {
             {
                 name: 'Google Analytics*',
                 img: 'assets/img/skills/analytics.png',
-                prof: 60
+                prof: 70
             },
             {
                 name: 'Spanish',

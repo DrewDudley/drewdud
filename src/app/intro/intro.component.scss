@@ -10,11 +10,11 @@
     justify-content: center;
     align-items: center;
     color: #FFF;
-    #intro-text {
+    #intro-content {
         text-align: center;
-        animation: fadeIn .25s ease-in both;
-        -webkit-animation: fadeIn .25s ease-in both;
-        animation-delay: 1s;
+        animation: titleFadeDown .2s ease-in both;
+        -webkit-animation: titleFadeDown .2s ease-in both;
+        animation-delay: 800ms;
         h2 {
             font-size: 28px;
         }
@@ -22,27 +22,27 @@
             font-size: 18px;
             color: $shadow;
         }
-        #menu-header {
+        #sub-title {
             font-size: 16px;
             padding: 1em 15px 0 15px;
-            animation: fadeDown .25s ease-in both;
-            -webkit-animation: fadeDown .25s ease-in both;
-            animation-delay: 2.5s;
+            animation: fadeDown .2s ease-in both;
+            -webkit-animation: fadeDown .2s ease-in both;
+            animation-delay: 950ms;
         }
-        .overlay {
+        .menu {
             padding-top: .5em;
             nav {
                 ul {
                     display: inline-block;
-                    margin: 0 8px;
+                    margin: 4px 8px;
                     padding: 0;
                     list-style: none;
                     margin-bottom: -1em;
                     li {
                         float: left;
                         margin-right: 20px;
-                        animation: fadeDown .25s ease-in both;
-                        -webkit-animation: fadeDown .25s ease-in both;
+                        animation: fadeDown .2s ease-in both;
+                        -webkit-animation: fadeDown .2s ease-in both;
                         i {
                             display: block;
                             font-size: 34px;
@@ -64,8 +64,8 @@
                         a:hover, a:focus {
                             background: rgba(0,0,0,.15);
                             box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .19);
-                            transform: translateY(-1px);
-                            -webkit-transform: translateY(-1px);
+                            transform: translateY(-2px);
+                            -webkit-transform: translateY(-2px);
                         }
                     }
                     li:last-child {
@@ -74,20 +74,20 @@
                     }
                 }
                 ul:first-child li:first-child {
-                    animation-delay: 3.75s;
-                    -webkit-animation-delay: 3.75s;
+                    animation-delay: 1.05s;
+                    -webkit-animation-delay: 1.05s;
                 }
                 ul:first-child li:nth-child(2) {
-                    animation-delay: 4s;
-                    -webkit-animation-delay: 4s;
+                    animation-delay: 1.2s;
+                    -webkit-animation-delay: 1.15s;
                 }
                 ul:nth-child(2) li:first-child {
-                    animation-delay: 4.25s;
-                    -webkit-animation-delay: 4.25s;
+                    animation-delay: 1.35s;
+                    -webkit-animation-delay: 1.25s;
                 }
                 ul:nth-child(2) li:nth-child(2) {
-                    animation-delay: 4.5s;
-                    -webkit-animation-delay: 4.5s;
+                    animation-delay: 1.5s;
+                    -webkit-animation-delay: 1.35s;
                 }
             }
         }
@@ -140,8 +140,8 @@
             width: 15px;
             top: -30px;
             left: 100px;
-            animation: flag-pole 11s cubic-bezier(.645, .045, .355, 1);
-            -webkit-animation: flag-pole 11s cubic-bezier(.645, .045, .355, 1);
+            animation: flag-pole  5.5s cubic-bezier(.645, .045, .355, 1);
+            -webkit-animation: flag-pole  5.5s cubic-bezier(.645, .045, .355, 1);
             &:before {
                 content: "";
                 position: absolute;
@@ -157,8 +157,8 @@
                 left: 3px;
                 top: 0;
                 background: $ionic;
-                animation: flag-unfurl 11s cubic-bezier(.645, .045, .355, 1);
-                -webkit-animation: flag-unfurl 11s cubic-bezier(.645, .045, .355, 1);
+                animation: flag-unfurl  5.5s cubic-bezier(.645, .045, .355, 1);
+                -webkit-animation: flag-unfurl  5.5s cubic-bezier(.645, .045, .355, 1);
             }
         }
     }
@@ -213,6 +213,26 @@
             -webkit-transform: translate3d(0, 0, 0);
         }
     }
+    @keyframes titleFadeDown {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -5%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @-webkit-keyframes titleFadeDown {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -5%, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+        }
+    }
     @keyframes rotating {
         from {
             transform: rotate(0deg);
@@ -229,10 +249,10 @@
             -webkit-transform: rotate(360deg);
         }
     }
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
+    // @keyframes fadeIn {
+    //     from { opacity: 0; }
+    //     to   { opacity: 1; }
+    // }
     @keyframes flag-pole {
         0%   { top: 0px; }
         48%  { top: 0px; }
