@@ -95,7 +95,7 @@ export class SkillsComponent implements OnInit {
             {
                 name: 'Google Analytics*',
                 img: 'assets/img/skills/analytics.png',
-                prof: 70
+                prof: 75
             },
             {
                 name: 'Spanish',

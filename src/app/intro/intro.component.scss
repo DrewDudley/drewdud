@@ -14,7 +14,7 @@
         text-align: center;
         animation: titleFadeDown .2s ease-in both;
         -webkit-animation: titleFadeDown .2s ease-in both;
-        animation-delay: 800ms;
+        animation-delay: 1.5s;
         h2 {
             font-size: 28px;
         }
@@ -27,7 +27,7 @@
             padding: 1em 15px 0 15px;
             animation: fadeDown .2s ease-in both;
             -webkit-animation: fadeDown .2s ease-in both;
-            animation-delay: 950ms;
+            animation-delay: 1.65s;
         }
         .menu {
             padding-top: .5em;
@@ -74,20 +74,20 @@
                     }
                 }
                 ul:first-child li:first-child {
-                    animation-delay: 1.05s;
-                    -webkit-animation-delay: 1.05s;
+                    animation-delay: 1.8s;
+                    -webkit-animation-delay: 1.8s;
                 }
                 ul:first-child li:nth-child(2) {
-                    animation-delay: 1.2s;
-                    -webkit-animation-delay: 1.15s;
+                    animation-delay: 1.9s;
+                    -webkit-animation-delay: 1.9s;
                 }
                 ul:nth-child(2) li:first-child {
-                    animation-delay: 1.35s;
-                    -webkit-animation-delay: 1.25s;
+                    animation-delay: 2s;
+                    -webkit-animation-delay: 2s;
                 }
                 ul:nth-child(2) li:nth-child(2) {
-                    animation-delay: 1.5s;
-                    -webkit-animation-delay: 1.35s;
+                    animation-delay: 2.1s;
+                    -webkit-animation-delay: 2.1s;
                 }
             }
         }
@@ -140,15 +140,15 @@
             width: 15px;
             top: -30px;
             left: 100px;
-            animation: flag-pole  5.5s cubic-bezier(.645, .045, .355, 1);
-            -webkit-animation: flag-pole  5.5s cubic-bezier(.645, .045, .355, 1);
+            animation: flag-pole 6.5s cubic-bezier(.645, .045, .355, 1);
+            -webkit-animation: flag-pole 6.5s cubic-bezier(.645, .045, .355, 1);
             &:before {
                 content: "";
                 position: absolute;
                 height: 30px;
                 width: 3px;
                 background: $moon;
-            }      
+            }
             &:after {
                 content: "";
                 position: absolute;
@@ -157,8 +157,8 @@
                 left: 3px;
                 top: 0;
                 background: $ionic;
-                animation: flag-unfurl  5.5s cubic-bezier(.645, .045, .355, 1);
-                -webkit-animation: flag-unfurl  5.5s cubic-bezier(.645, .045, .355, 1);
+                animation: flag-unfurl 6.5s cubic-bezier(.645, .045, .355, 1);
+                -webkit-animation: flag-unfurl 6.5s cubic-bezier(.645, .045, .355, 1);
             }
         }
     }
@@ -269,7 +269,7 @@
         100% { width: 22px; }
     }
     @media only screen and (max-width: 1250px) {
-        #intro-text {
+        #intro-content {
             text-align: center;
             padding: 0;
             h2 {
@@ -284,7 +284,7 @@
                 font-size: 1em;
                 padding-top: 0 !important;
             }
-            .overlay {
+            .menu {
                 nav {
                     ul {
                         li {
