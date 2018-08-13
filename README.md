@@ -1,6 +1,6 @@
 # www.drewdud.com
 
-A small portfolio built with Angular CLI, utilizing Angular 5, Bootstrap 4, Google Material icons, Google Analytics, and 100% unit test
+A small portfolio built with Angular CLI, utilizing Angular 6, Bootstrap 4, Google Material icons, Google Analytics, and 100% unit test
 coverage with Jasmine and Karma. Check it out live [here](http://drewdud.com).
 
 ## Run it locally
