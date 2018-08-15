@@ -24,8 +24,8 @@
         }
         .row:hover .about-img {
             box-shadow: 0 6px 25px rgba(0, 0, 0, 0.23), 0 6px 25px rgba(0, 0, 0, 0.19);
-            -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+            -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
         }
     }
     #satellite {
@@ -35,7 +35,7 @@
         width: 100px;
         animation: bobble 2500ms infinite ease-in-out;
         -webkit-animation: bobble 2500ms infinite ease-in-out;
-        
+
     }
     @media only screen and (max-width: 1250px) {
         padding: 60px 5px;
@@ -43,8 +43,8 @@
             margin-left: 0 !important;
         }
         #satellite {
-            width: 75px;
-            top: 12px;
+            width: 85px;
+            top: 0px;
         }
     }
     @media only screen and (max-width: 1140px) {

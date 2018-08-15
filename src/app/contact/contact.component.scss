@@ -7,9 +7,11 @@
     .col-xl-1 {
         padding-top: 105px;
         text-align: center;
+        margin-left: -10px;
+        margin-right: -10px;
         i {
             font-size: 1.3em;
-            color: #FFF;
+            color: #FFF;;
             transition: all 200ms ease-in-out;
             -webkit-transition: all 200ms ease-in-out;
         }
@@ -84,7 +86,7 @@
     @media only screen and (max-width: 1200px) {
         padding: 60px 20px 20px 20px;
         .col-xl-1 {
-            padding: 35px 0;
+            padding: 40px 0 30px 10px;
             margin: 0;
             text-align: left;
         }

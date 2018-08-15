@@ -54,10 +54,6 @@
                             font-size: 2.25em;
                             color: $ionic;
                         }
-                        .title, i {
-                            transform: translateY(-15%);
-                            -webkit-transform: translateY(-15%);
-                        }
                     }
                 }
             }
@@ -69,11 +65,11 @@
                 opacity: 1;
             }
             figure:hover figcaption .caption-content, .container figure:focus figcaption .caption-content {
-                transform: translateY(15%);
-                -webkit-transform: translateY(15%);
+                transform: translateY(5%);
+                -webkit-transform: translateY(5%);
             }
         }
-        
+
     }
     @media only screen and (max-width: 1250px) {
         #section-header {
