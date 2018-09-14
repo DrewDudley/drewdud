@@ -11,9 +11,9 @@
                 <span>
                     {{ skill.name }}
                 </span>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped" [ngStyle]="{'width.%': skill.prof}">{{ skill.prof }}%</div>
-                </div>
+                <!-- <div class="progress">
+                    <div class="progress-bar" [ngStyle]="{'width.%': skill.prof}">{{ skill.prof }}%</div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -30,9 +30,9 @@
                 <span>
                     {{ learningSkill.name }}
                 </span>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped" [ngClass]="{learning: learningSkill.prof < 80}" [ngStyle]="{'width.%': learningSkill.prof}">{{ learningSkill.prof }}%</div>
-                </div>
+                <!-- <div class="progress">
+                    <div class="progress-bar" [ngClass]="{learning: learningSkill.prof < 80}" [ngStyle]="{'width.%': learningSkill.prof}">{{ learningSkill.prof }}%</div>
+                </div> -->
             </div>
         </div>
     </div>
