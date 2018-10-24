@@ -18,11 +18,11 @@
         h2 {
             font-size: 28px;
         }
-        .page-title {
-            font-size: 18px;
+        .sub-title {
+            font-size: 20px;
             color: $shadow;
         }
-        #sub-title {
+        #greeting {
             font-size: 16px;
             padding: 1em 15px 0 15px;
             animation: fadeDown .2s ease-in both;
@@ -277,7 +277,7 @@
                 font-size: 1.8em;
                 font-weight: 400;
             }
-            .page-title {
+            .sub-title {
                 font-size: 1.15em !important;
             }
             #menu-header {
