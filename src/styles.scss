@@ -1,7 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Global Colors
-$dark: #1a2533;
+$dark: #233143;
 $darker: #090A0F;
 $black: #000;
 $ionic: #4E8DF7;
@@ -21,7 +21,8 @@ body {
     line-height: 2em;
 }
 .page-title {
-    font-size: 26px;
+    font-size: 28px;
+    font-weight: 500;
 }
 .draggable {
     cursor: grab;
@@ -49,8 +50,8 @@ span a {
         visibility: hidden;
         transform: scaleX(0);
         -webkit-transform: scaleX(0);
-        transition: all 175ms ease-in-out 0s;
-        -webkit-transition: all 175ms ease-in-out 0s;
+        transition: all .175s ease-in-out 0s;
+        -webkit-transition: all .175s ease-in-out 0s;
     }
     span a:hover:before {
         visibility: visible;
@@ -58,3 +59,90 @@ span a {
         -webkit-transform: scaleX(1);
     }
 }
+
+// // Blinking stars
+// @function box-shadow($stars) {
+//   $bxshadow: ();
+//   @for $i from 1 to $stars {
+//     $bxshadow: append($bxshadow, (random(2000) + 0px) (random(2000) + 0px) #fff, comma);
+//   }
+//   @return unquote($bxshadow);
+// }
+// $bxshadow-small: box-shadow(800);
+// $bxshadow-medium: box-shadow(500);
+// $bxshadow-large: box-shadow(300);
+// .stars.small {
+//   height: 1px;
+//   width: 1px;
+//   border-radius: 50%;
+//   background: transparent;
+//   box-shadow: $bxshadow-small;
+//   animation: blink-small 3s infinite;
+// }
+// .stars.medium {
+//   height: 2px;
+//   width: 2px;
+//   border-radius: 50%;
+//   background: transparent;
+//   box-shadow: $bxshadow-medium;
+//   animation: blink-medium 5s infinite;
+// }
+// .stars.large {
+//   height: 3px;
+//   width: 3px;
+//   border-radius: 50%;
+//   background: transparent;
+//   box-shadow: $bxshadow-large;
+//   animation: blink-large 7s infinite;
+// }
+// @keyframes blink-large {
+//   0% {
+//     box-shadow: $bxshadow-large;
+//   }
+//   70% {
+//     $colors: '#fff', 'transparent';
+//     $stars: $bxshadow-large;
+//     @for $i from 1 to length($stars) {
+//       $star: set-nth(nth($stars, $i), 3, unquote(nth($colors, random(length($colors)))));
+//       $stars: set-nth($stars, $i, $star);
+//     }
+//     box-shadow: $stars;
+//   }
+//   100% {
+//     box-shadow: $bxshadow-large;
+//   }
+// }
+// @keyframes blink-medium {
+//   0% {
+//     box-shadow: $bxshadow-medium;
+//   }
+//   70% {
+//     $colors: '#fff', 'transparent';
+//     $stars: $bxshadow-medium;
+//     @for $i from 1 to length($stars) {
+//       $star: set-nth(nth($stars, $i), 3, unquote(nth($colors, random(length($colors)))));
+//       $stars: set-nth($stars, $i, $star);
+//     }
+//     box-shadow: $stars;
+//   }
+//   100% {
+//     box-shadow: $bxshadow-medium;
+//   }
+// }
+// @keyframes blink-small {
+//   0% {
+//     box-shadow: $bxshadow-small;
+//   }
+//   70% {
+//     $colors: '#fff', 'transparent';
+//     $stars: $bxshadow-small;
+//     @for $i from 1 to length($stars) {
+//       $star: set-nth(nth($stars, $i), 3, unquote(nth($colors, random(length($colors)))));
+//       $stars: set-nth($stars, $i, $star);
+//     }
+//     box-shadow: $stars;
+//   }
+//   100% {
+//     box-shadow: $bxshadow-small;
+//   }
+// }
