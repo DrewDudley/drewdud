@@ -15,16 +15,18 @@
                 height: 15.5em;
                 width: 15.5em;
                 border-radius: 50%;
-                background: $ionic;
+                background: $mint;
                 padding: 8px;
-                box-shadow: 0 3px 10px lighten($ionic, 10%), 0 3px 10px lighten($ionic, 7%);
+                box-shadow: 0 3px 10px lighten($mint, 10%), 0 3px 10px lighten($mint, 7%);
                 transition: all .25s ease-in-out;
                 -webkit-transition: all .25s ease-in-out;
             }
         }
         .row:hover .about-img {
-            -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
+            // -webkit-transform: translateY(-2px);
+            // transform: translateY(-2px);
+            background: $ionic;
+            box-shadow: 0 3px 10px lighten($ionic, 10%), 0 3px 10px lighten($ionic, 7%);
         }
     }
     #satellite {

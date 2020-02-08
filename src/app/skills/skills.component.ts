@@ -25,7 +25,7 @@ export class SkillsComponent implements OnInit {
                 prof: 95
             },
             {
-                name: 'CSS/ SASS*',
+                name: 'CSS3/ SASS*',
                 img: 'assets/img/skills/sass.png',
                 prof: 95
             },
@@ -87,10 +87,15 @@ export class SkillsComponent implements OnInit {
                 img: 'assets/img/skills/jest.svg',
                 prof: 70
             },
+            // {
+            //     name: 'Java',
+            //     img: 'assets/img/skills/java.png',
+            //     prof: 50
+            // },
             {
-                name: 'Java',
-                img: 'assets/img/skills/java.png',
-                prof: 50
+                name: 'Node.js',
+                img: 'assets/img/skills/nodejs.svg',
+                prof: '40'
             },
             {
                 name: 'Google Analytics*',
